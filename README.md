@@ -9,30 +9,86 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-blue.svg)](https://numpy.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue.svg)](https://matplotlib.org/)
 [![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-lightblue.svg)](https://seaborn.pydata.org/)
-[![GitHub](https://img.shields.io/github/stars/joanh/Baremos2025?style=social)](https://github.com/joanh/Baremos2025)
-[![Forks](https://img.shields.io/github/forks/joanh/Baremos2025?style=social)](https://github.com/joanh/Baremos2025)
-[![Issues](https://img.shields.io/github/issues/joanh/Baremos2025)](https://github.com/joanh/Baremos2025/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/joanh/Baremos2025)](https://github.com/joanh/Baremos2025)
 [![Education](https://img.shields.io/badge/Purpose-Education-brightgreen.svg)](https://github.com/joanh/Baremos2025)
 
 Herramientas Python para extraer y analizar datos de baremos de oposiciones desde PDFs oficiales de la Comunidad de Madrid.
 
-## 📊 Gráficos y Estadísticas
+## � Índice de Contenidos
 
-### 🎯 Acceso Directo a Resultados
+| Especialidad | Candidatos | Acceso Rápido |
+|--------------|------------|---------------|
+| [📊 **Informática (107)**](#-informática-107) | 343 | [Ver Análisis](#-informática-107) |
+| [📊 **Matemáticas (008)**](#-matemáticas-008) | 1,829 | [Ver Análisis](#-matemáticas-008) |
+| [📊 **Física y Química (010)**](#-física-y-química-010) | 962 | [Ver Análisis](#-física-y-química-010) |
+| [📊 **Lengua y Literatura (004)**](#-lengua-y-literatura-004) | 1,727 | [Ver Análisis](#-lengua-y-literatura-004) |
 
-| Especialidad | Candidatos | Gráfico | Estadísticas | Datos |
-|--------------|------------|---------|-------------|-------|
-| **Informática (107)** | 343 | [📈 Ver Gráfico](img/baremo_informatica_107_2025.png) | Media: 6.84, σ: 2.44 | [📁 Datos](especialidades/informatica_107/output/) |
-| **Matemáticas (008)** | 1,829 | [📈 Ver Gráfico](img/baremo_matematicas_008_2025.png) | Media: 5.07, σ: 2.61 | [📁 Datos](especialidades/matematicas_008/output/) |
-| **Física y Química (010)** | 962 | [📈 Ver Gráfico](img/baremo_fisica_quimica_010_2025.png) | Media: 5.09, σ: 2.62 | [📁 Datos](especialidades/fisica_quimica_010/output/) |
-| **Lengua y Literatura (004)** | 1,727 | [📈 Ver Gráfico](img/baremo_lengua_literatura_004_2025.png) | Media: 5.06, σ: 2.62 | [📁 Datos](especialidades/lengua_literatura_004/output/) |
+**Total candidatos analizados: 4,861** 📊
 
-### 📈 Vista Previa de Resultados
+---
 
+## 📊 Informática (107)
+
+### Estadísticas Principales
+- **Candidatos:** 343
+- **Media:** 6.84 puntos
+- **Desviación estándar:** 2.44
+- **Mediana:** 7.00 puntos
+- **Rango:** 0.00 - 13.00 puntos
+
+### Gráfico de Distribución
 ![Análisis Informática 2025](img/baremo_informatica_107_2025.png)
 
-*Ejemplo: Distribución de puntuaciones de Informática (107) - 343 candidatos*
+**📁 Datos completos:** [Carpeta Informática](especialidades/informatica_107/output/) | **📖 Documentación:** [README Informática](especialidades/informatica_107/README.md)
+
+---
+
+## 📊 Matemáticas (008)
+
+### Estadísticas Principales
+- **Candidatos:** 1,829
+- **Media:** 5.07 puntos
+- **Desviación estándar:** 2.61
+- **Mediana:** 5.00 puntos
+- **Rango:** 0.00 - 13.00 puntos
+
+### Gráfico de Distribución
+![Análisis Matemáticas 2025](img/baremo_matematicas_008_2025.png)
+
+**📁 Datos completos:** [Carpeta Matemáticas](especialidades/matematicas_008/output/) | **📖 Documentación:** [README Matemáticas](especialidades/matematicas_008/README.md)
+
+---
+
+## 📊 Física y Química (010)
+
+### Estadísticas Principales
+- **Candidatos:** 962
+- **Media:** 5.09 puntos
+- **Desviación estándar:** 2.62
+- **Mediana:** 5.00 puntos
+- **Rango:** 0.00 - 13.00 puntos
+
+### Gráfico de Distribución
+![Análisis Física y Química 2025](img/baremo_fisica_quimica_010_2025.png)
+
+**📁 Datos completos:** [Carpeta Física y Química](especialidades/fisica_quimica_010/output/) | **📖 Documentación:** [README Física y Química](especialidades/fisica_quimica_010/README.md)
+
+---
+
+## 📊 Lengua y Literatura (004)
+
+### Estadísticas Principales
+- **Candidatos:** 1,727
+- **Media:** 5.06 puntos
+- **Desviación estándar:** 2.62
+- **Mediana:** 5.00 puntos
+- **Rango:** 0.00 - 13.00 puntos
+
+### Gráfico de Distribución
+![Análisis Lengua y Literatura 2025](img/baremo_lengua_literatura_004_2025.png)
+
+**📁 Datos completos:** [Carpeta Lengua y Literatura](especialidades/lengua_literatura_004/output/) | **� Documentación:** [README Lengua y Literatura](especialidades/lengua_literatura_004/README.md)
+
+---
 
 ## 🎯 Características
 
@@ -62,49 +118,28 @@ Baremo2025/
 ## 🚀 Uso Rápido
 
 1. **Analizar estructura del PDF:**
+
    ```bash
    python src/analisis_forense_pdf.py
    ```
 
 2. **Extraer datos:**
+
    ```bash  
    python src/extractor_ORDEN_REAL.py
    ```
 
 3. **Generar visualización:**
+
    ```bash
    python src/baremo2025.py
    ```
-
-## 📊 Especialidades Implementadas
-
-### ✅ **Completamente Funcionales**
-
-| Especialidad | Código | Candidatos | Estado | Documentación |
-|--------------|--------|------------|--------|---------------|
-| **Informática** | 107 | 343 | ✅ Completo | [📖 README](especialidades/informatica_107/README.md) |
-| **Matemáticas** | 008 | 1,829 | ✅ Completo | [📖 README](especialidades/matematicas_008/README.md) |
-| **Física y Química** | 010 | 962 | ✅ Completo | [📖 README](especialidades/fisica_quimica_010/README.md) |
-| **Lengua y Literatura** | 004 | 1,727 | ✅ Completo | [📖 README](especialidades/lengua_literatura_004/README.md) |
-
-**Total candidatos analizados: 4,861** 📊
 
 ## 🔧 Requisitos
 
 ```bash
 pip install -r requirements.txt
 ```
-
-## 📈 Ejemplo de Resultados
-
-![Análisis Informática 2025](output/baremo_informatica_107_2025.png)
-
-### Datos Extraídos
-
-- **📊 343 candidatos** de Informática en orden del PDF
-- **📈 Estadísticas completas** (media, mediana, percentiles)
-- **📋 Múltiples formatos** (CSV, TXT, Python list)
-- **🎨 Gráficos profesionales** con firma @joanh
 
 ## 🤝 Contribuir
 
