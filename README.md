@@ -30,19 +30,46 @@ Una copia del PDF original se puede encontrar en `./data`
 
 ```
 Baremo2025/
-├── src/                    # Código fuente
+├── src/                    # Scripts comunes y herramientas generales
 │   ├── analisis_forense_pdf.py    # Análisis de estructura PDF
-│   ├── extractor_ORDEN_REAL.py    # Extractor en orden del PDF
-│   └── baremo2025.py              # Visualización y estadísticas
-├── data/                   # PDFs originales
-├── output/                 # Resultados generados
-├── config/                 # Configuración de especialidades
+│   ├── extractor_ORDEN_REAL.py    # Extractor original (legacy)
+│   └── baremo2025.py              # Visualización general
+├── especialidades/         # Directorios independientes por especialidad
+│   └── informatica_107/    # Informática (107) - IMPLEMENTADO
+│       ├── scripts/        # Scripts específicos de Informática
+│       ├── data/          # PDFs y archivos de entrada
+│       ├── output/        # Resultados generados
+│       ├── config.yaml    # Configuración específica
+│       └── README.md      # Documentación detallada
+├── data/                   # PDFs originales comunes
+├── output/                 # Resultados globales (legacy)
+├── config/                 # Configuración global
 ├── backup/                 # Archivos de desarrollo
-├── docs/                   # Documentación
+├── docs/                   # Documentación general
 └── examples/              # Ejemplos de uso
 ```
 
 ## 🚀 Uso Rápido
+
+### Método Recomendado (Especialidades Independientes)
+
+1. **Navegar a la especialidad deseada:**
+   ```bash
+   cd especialidades/informatica_107
+   ```
+
+2. **Colocar el PDF en data/:**
+   ```bash
+   cp ../../data/rh03_257_2025_590_12_baremo_prov.pdf data/baremo_informatica_107_2025.pdf
+   ```
+
+3. **Ejecutar extractor específico:**
+   ```bash
+   cd scripts
+   python extractor_informatica.py
+   ```
+
+### Método Legacy (Scripts Globales)
 
 1. **Analizar estructura del PDF:**
    ```bash
@@ -61,10 +88,13 @@ Baremo2025/
 
 ## 📊 Especialidades Disponibles
 
-- **✅ Informática (107)** - Páginas 2649-2697 - 343 candidatos
-- **🔧 Matemáticas** - Configurable
-- **🔧 Física y Química** - Configurable  
-- **🔧 Lengua y Literatura** - Configurable
+- **✅ Informática (107)** - Páginas 2649-2697 - 343 candidatos - **IMPLEMENTADO**
+  - 📁 `especialidades/informatica_107/`
+  - 🔧 Scripts específicos y configuración dedicada
+  - 📊 Validación contra datos conocidos
+- **🔧 Matemáticas (008)** - Configurable - **PLANIFICADO**
+- **🔧 Física y Química (010)** - Configurable - **PLANIFICADO**
+- **🔧 Lengua y Literatura** - Configurable - **PLANIFICADO**
 
 ## 🔧 Requisitos
 

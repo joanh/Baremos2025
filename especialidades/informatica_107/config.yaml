@@ -1,0 +1,43 @@
+# Configuración específica para Informática (107)
+especialidad:
+  codigo: "107"
+  nombre: "INFORMATICA"
+  nombre_completo: "Profesores de Enseñanza Secundaria - Informática"
+  
+# Configuración del PDF
+pdf:
+  archivo: "baremo_informatica_107_2025.pdf"
+  pagina_inicio: 2649
+  pagina_fin: 2697
+  candidatos_por_pagina: 7
+  total_candidatos_esperado: 343
+
+# Patrones de extracción
+patrones:
+  dni: "^\\*\\*\\*\\*.*\\*"
+  puntuacion: "\\b(\\d{1,2},\\d{4})\\b"
+  nombre_candidato: "(?<=\\*)\\s*([A-ZÁÉÍÓÚÑ\\s,]+?)(?=\\s+\\d)"
+
+# Configuración de visualización
+visualization:
+  titulo: "Baremo Informática 2025 - Comunidad de Madrid"
+  color_primario: "#2E86AB"
+  color_secundario: "#A23B72"
+  firma: "@joanh"
+  formato_salida: "png"
+  dpi: 300
+  tamaño_figura: [12, 8]
+
+# Archivos de salida
+output:
+  csv: "puntuaciones_informatica_107.csv"
+  txt: "lista_informatica_107.txt"
+  grafico: "baremo_informatica_107_2025.png"
+  estadisticas: "estadisticas_informatica_107.txt"
+
+# Validación
+validacion:
+  min_candidatos: 300
+  max_candidatos: 400
+  min_puntuacion: 0.0
+  max_puntuacion: 15.0
