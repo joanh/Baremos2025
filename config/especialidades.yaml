@@ -1,0 +1,32 @@
+especialidades:
+  INFORMATICA:
+    codigo: "107"
+    nombre: "INFORMATICA" 
+    pagina_inicio: 2649
+    pagina_fin: 2697
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Informática"
+    total_candidatos: 343
+  
+  MATEMATICAS:
+    codigo: "008"
+    nombre: "MATEMATICAS"
+    pagina_inicio: null  # Configurar según PDF
+    pagina_fin: null     # Configurar según PDF
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Matemáticas"
+  
+  FISICA_QUIMICA:
+    codigo: "010" 
+    nombre: "FISICA_QUIMICA"
+    pagina_inicio: null  # Configurar según PDF
+    pagina_fin: null     # Configurar según PDF
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Física y Química"
+
+# Configuración general
+configuracion:
+  patron_dni: "^\*\*\*\*.*\*"
+  patron_numeros: "\b(\d{1,2},\d{4})\b"
+  rango_puntuaciones: [0.0, 10.0]
+  pdf_original: "rh03_257_2025_590_12_baremo_prov.pdf"
