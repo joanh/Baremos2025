@@ -91,7 +91,7 @@ def main():
     # CREAR FIGURA
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
     fig.suptitle('Baremo Lengua Castellana y Literatura 2025 - Comunidad de Madrid', 
-                 fontsize=18, fontweight='bold', y=0.95)
+                 fontsize=16, fontweight='bold', y=0.96)
     
     # 1. HISTOGRAMA LIMPIO
     counts, bins, patches = ax1.hist(puntuaciones, bins=25, alpha=0.8, 
@@ -110,14 +110,15 @@ def main():
     ax1.axvline(media, color='red', linestyle='--', linewidth=2, alpha=0.8)
     ax1.axvline(mediana, color='orange', linestyle='--', linewidth=2, alpha=0.8)
     
-    # Anotaciones en el histograma
+    # Anotaciones en el histograma - CORREGIDO
     ax1.text(0.02, 0.98, f'Total: {len(puntuaciones)} candidatos', 
             transform=ax1.transAxes, fontsize=12, fontweight='bold',
-            verticalalignment='top', bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
+            verticalalignment='top', 
+            bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
     
     ax1.set_xlabel('Puntuación (0-10)', fontweight='bold')
     ax1.set_ylabel('Número de Candidatos', fontweight='bold')
-    ax1.set_title('Distribución de Puntuaciones', fontweight='bold', pad=20)
+    ax1.set_title('Distribución de Puntuaciones', fontweight='bold', pad=15)
     ax1.grid(True, alpha=0.3)
     ax1.legend(loc='upper right', fontsize=10)
     ax1.set_xlim(0, 10)
@@ -140,22 +141,22 @@ def main():
     
     barras = ax2.bar(etiquetas, conteos, color=colores, alpha=0.8, edgecolor='black', linewidth=1)
     
-    # Añadir etiquetas en las barras
+    # Añadir etiquetas en las barras - LIMPIO
     for i, (barra, count, porcentaje) in enumerate(zip(barras, conteos, porcentajes)):
         altura = barra.get_height()
         ax2.text(barra.get_x() + barra.get_width()/2., altura + max(conteos)*0.01,
-                f'{count}\\n({porcentaje:.1f}%)', ha='center', va='bottom', 
+                f'{count}\n({porcentaje:.1f}%)', ha='center', va='bottom', 
                 fontweight='bold', fontsize=11)
     
     ax2.set_xlabel('Rango de Puntuaciones', fontweight='bold')
     ax2.set_ylabel('Número de Candidatos', fontweight='bold')
-    ax2.set_title('Distribución por Rangos de Puntuación', fontweight='bold', pad=20)
+    ax2.set_title('Distribución por Rangos de Puntuación', fontweight='bold', pad=15)
     ax2.grid(True, alpha=0.3, axis='y')
     ax2.set_ylim(0, max(conteos) * 1.15)
     
-    # Información adicional en la esquina
-    info_text = (f'Media: {media:.2f}\\n'
-                f'Mediana: {mediana:.2f}\\n'
+    # Información adicional en la esquina - CORREGIDO
+    info_text = (f'Media: {media:.2f}\n'
+                f'Mediana: {mediana:.2f}\n'
                 f'Desv. Std: {desv_std:.2f}')
     ax2.text(0.98, 0.98, info_text, transform=ax2.transAxes, 
             fontsize=10, verticalalignment='top', horizontalalignment='right',
@@ -167,7 +168,7 @@ def main():
     
     # AJUSTAR LAYOUT Y GUARDAR
     plt.tight_layout()
-    plt.subplots_adjust(top=0.88, bottom=0.12)
+    plt.subplots_adjust(top=0.90, bottom=0.12)
     
     # Guardar archivos
     png_path = OUTPUT_DIR / "baremo_lengua_literatura_004_2025.png"
@@ -179,8 +180,8 @@ def main():
     print(f"✅ Gráfico PNG guardado: {png_path.name}")
     print(f"✅ Gráfico PDF guardado: {pdf_path.name}")
     
-    # Resumen estadístico
-    print("\\n" + "="*60)
+    # Resumen estadístico - CORREGIDO
+    print("\n" + "="*60)
     print("📊 RESUMEN ESTADÍSTICO - LENGUA CASTELLANA Y LITERATURA (004)")
     print("="*60)
     print(f"Total candidatos: {len(puntuaciones):,}")
@@ -190,7 +191,7 @@ def main():
     print(f"Desviación estándar: {desv_std:.4f}")
     print(f"Mediana: {mediana:.4f}")
     
-    print("\\nDISTRIBUCIÓN POR RANGOS:")
+    print("\nDISTRIBUCIÓN POR RANGOS:")
     print("-" * 30)
     for i, (etiqueta, count, porcentaje) in enumerate(zip(etiquetas, conteos, porcentajes)):
         print(f"{etiqueta} puntos: {count:4d} candidatos ({porcentaje:5.1f}%)")
