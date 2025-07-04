@@ -6,6 +6,7 @@
 [![PDFPlumber](https://img.shields.io/badge/pdfplumber-0.7%2B-green.svg)](https://github.com/jsvine/pdfplumber)
 [![Pandas](https://img.shields.io/badge/pandas-1.3%2B-150458.svg)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/matplotlib-3.5%2B-11557c.svg)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/seaborn-0.12%2B-4c72b0.svg)](https://seaborn.pydata.org/)
 [![NumPy](https://img.shields.io/badge/numpy-1.21%2B-013243.svg)](https://numpy.org/)
 [![Claude](https://img.shields.io/badge/AI_Assistant-Claude_Sonnet_4.0-8A2BE2.svg)](https://www.anthropic.com/claude)
 
@@ -141,7 +142,11 @@ Baremo2025/
   - 📊 Extracción exitosa (138 páginas procesadas)
   - 🎨 Gráficos profesionales generados
 
-- **🔧 Lengua y Literatura** - Configurable - **PLANIFICADO**
+- **✅ Lengua Castellana y Literatura (004)** - Páginas 113-359 - 1,727 candidatos - **COMPLETADO**
+  - 📁 `especialidades/lengua_literatura_011/`
+  - 🔧 Extractor + Visualizador funcionales
+  - 📊 Extracción exitosa (247 páginas procesadas)
+  - 🎨 Gráficos profesionales generados
 
 ## 🔧 Requisitos
 
@@ -160,6 +165,9 @@ pip install -r requirements.txt
 ### Física y Química (010)
 ![Análisis Física y Química 2025](img/baremo_fisica_quimica_010_2025.png)
 
+### Lengua y Literatura (004)
+![Análisis Lengua y Literatura 2025](img/baremo_lengua_literatura_004_2025.png)
+
 ### Datos Extraídos
 
 #### Informática (107)
@@ -177,6 +185,12 @@ pip install -r requirements.txt
 #### Física y Química (010)
 - **📊 947 candidatos** extraídos en orden del PDF
 - **📈 Estadísticas**: Media 4.97, Mediana 5.00, σ 2.72
+- **📋 Formatos**: CSV, TXT, Python list
+- **🎨 Gráficos**: Distribución + análisis por rangos
+
+#### Lengua Castellana y Literatura (004)
+- **📊 1,727 candidatos** extraídos en orden del PDF
+- **📈 Estadísticas**: Media 5.06, Mediana 5.00, σ 2.62
 - **📋 Formatos**: CSV, TXT, Python list
 - **🎨 Gráficos**: Distribución + análisis por rangos
 

@@ -1,13 +1,14 @@
-# Lengua Castellana y Literatura (011) - Baremo 2025 📚
+# Lengua Castellana y Literatura (004) - Baremo 2025 📚
 
-Extracción y análisis de datos para la especialidad de **Lengua Castellana y Literatura** (código 011) del baremo provisional de oposiciones 2025 de la Comunidad de Madrid.
+Extracción y análisis de datos para la especialidad de **Lengua Castellana y Literatura** (código 004) del baremo provisional de oposiciones 2025 de la Comunidad de Madrid.
 
 ## 📊 Información de la Especialidad
 
-- **Código**: 011
+- **Código**: 004
 - **Nombre**: Lengua Castellana y Literatura
 - **Nivel**: Profesores de Enseñanza Secundaria
-- **Páginas**: 2-10 (9 páginas)
+- **Total candidatos**: 1,727
+- **Páginas**: 113-359 (247 páginas)
 - **Fuente**: [Baremo Provisional CM](https://www.comunidad.madrid/sites/default/files/doc/educacion/rh03/rh03_257_2025_590_12_baremo_prov.pdf)
 
 ## 🚀 Uso
@@ -16,33 +17,33 @@ Extracción y análisis de datos para la especialidad de **Lengua Castellana y L
 
 ```bash
 cd scripts
-python extractor_lengua_literatura.py
+python extractor_lengua_literatura_FINAL.py
 ```
 
 ### 2. Generar visualización
 
 ```bash
-python visualizador_lengua_literatura.py
+python visualizador_lengua_literatura_CORREGIDO.py
 ```
 
 ## 📈 Resultados de la Extracción
 
-- **Total candidatos**: 2,205
+- **Total candidatos**: 1,727
 - **Puntuación máxima**: 10.0000
 - **Puntuación mínima**: 0.0000  
-- **Puntuación media**: 0.4883
-- **Desviación estándar**: 1.2963
-- **Mediana**: 0.0000
+- **Puntuación media**: 5.0587
+- **Desviación estándar**: 2.6222
+- **Mediana**: 5.0000
 
 ### Distribución por rangos
 
-- **0-2 puntos**: 2,010 candidatos (91.2%)
-- **2-4 puntos**: 96 candidatos (4.4%)
-- **4-6 puntos**: 73 candidatos (3.3%)
-- **6-8 puntos**: 13 candidatos (0.6%)
-- **8-10 puntos**: 12 candidatos (0.5%)
+- **0-2 puntos**: 227 candidatos (13.1%)
+- **2-4 puntos**: 425 candidatos (24.6%)
+- **4-6 puntos**: 382 candidatos (22.1%)
+- **6-8 puntos**: 350 candidatos (20.3%)
+- **8-10 puntos**: 313 candidatos (18.1%)
 
-![Gráfico Lengua y Literatura](../../img/baremo_lengua_literatura_011_2025.png)
+![Gráfico Lengua y Literatura](../../img/baremo_lengua_literatura_004_2025.png)
 
 ## 📁 Estructura
 

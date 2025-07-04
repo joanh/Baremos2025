@@ -1,0 +1,24 @@
+ESTADÍSTICAS LENGUA CASTELLANA Y LITERATURA (004) - BAREMO 2025
+=================================================================
+
+Total candidatos: 1727
+Páginas procesadas: 113-359
+
+ESTADÍSTICAS DESCRIPTIVAS:
+------------------------------
+Puntuación máxima: 10.0000
+Puntuación mínima: 0.0000
+Puntuación media: 5.0587
+Mediana: 5.0000
+Desviación estándar: 2.6222
+Percentil 25: 3.0000
+Percentil 75: 7.3833
+
+DISTRIBUCIÓN POR RANGOS:
+-------------------------
+0-2 puntos: 227 candidatos (13.1%)
+2-4 puntos: 425 candidatos (24.6%)
+4-6 puntos: 382 candidatos (22.1%)
+6-8 puntos: 350 candidatos (20.3%)
+8-10 puntos: 313 candidatos (18.1%)
+10.0 puntos exactos: 30 candidatos (1.7%)

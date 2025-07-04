@@ -1,24 +1,24 @@
-# Configuración para Lengua Castellana y Literatura (011) - Baremo 2025
+# Configuración para Lengua Castellana y Literatura (004) - Baremo 2025
 especialidad:
-  codigo: "011"
+  codigo: "004"
   nombre: "Lengua Castellana y Literatura"
   nivel: "Profesores de Enseñanza Secundaria"
   
 # Configuración del PDF
 pdf:
   archivo: "data/rh03_257_2025_590_12_baremo_prov.pdf"
-  pagina_inicio: 2
-  pagina_fin: 10
-  total_paginas: 9
+  pagina_inicio: 113
+  pagina_fin: 359
+  total_paginas: 247
   
 # Validación de páginas clave
 validacion:
   pagina_inicial:
-    numero: 5
-    puntuaciones_esperadas: [9.5700, 5.0000, 5.0000, 5.0000, 0.0000, 3.5000, 8.5000]
+    numero: 113
+    puntuaciones_esperadas: [3.5000, 8.5000, 2.5000, 6.4084, 5.0000, 3.0000, 0.4792]
   pagina_final:
-    numero: 10
-    puntuaciones_esperadas: [4.5000, 1.5000, 1.5000, 1.0000, 0.5000]
+    numero: 359
+    puntuaciones_esperadas: [8.0000, 7.3333, 0.1000, 4.5000, 3.0000]
 
 # Patrones de extracción
 extraccion:
@@ -29,7 +29,7 @@ extraccion:
 
 # Configuración de visualización
 visualizacion:
-  titulo: "Distribución de Puntuaciones - Lengua Castellana y Literatura (011)"
+  titulo: "Distribución de Puntuaciones - Lengua Castellana y Literatura (004)"
   color_principal: "#2E8B57"  # Verde bosque
   bins: 50
   rango_puntuacion: [0, 10]

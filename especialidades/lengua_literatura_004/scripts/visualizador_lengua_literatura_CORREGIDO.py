@@ -29,10 +29,10 @@ def cargar_configuracion():
 
 def cargar_datos():
     """Carga los datos desde el CSV generado"""
-    csv_path = Path(__file__).parent.parent / "output" / "puntuaciones_lengua_literatura_011.csv"
+    csv_path = Path(__file__).parent.parent / "output" / "puntuaciones_lengua_literatura_004.csv"
     if not csv_path.exists():
         print(f"❌ ERROR: No se encuentra el archivo CSV en {csv_path}")
-        print("💡 Ejecuta primero: python extractor_lengua_literatura_CORREGIDO.py")
+        print("💡 Ejecuta primero: python extractor_lengua_literatura_FINAL.py")
         return None
     
     df = pd.read_csv(csv_path)
@@ -41,7 +41,7 @@ def cargar_datos():
 
 def calcular_estadisticas(df):
     """Calcula estadísticas descriptivas"""
-    puntuaciones = df['Total']
+    puntuaciones = df['puntuacion']
     
     stats_dict = {
         'total': len(puntuaciones),
@@ -74,7 +74,7 @@ def generar_grafico_principal(df, config):
     fig.suptitle('Distribución de Puntuaciones - Lengua Castellana y Literatura (011)\nBaremo Provisional 2025 - Comunidad de Madrid', 
                  fontsize=16, fontweight='bold', y=0.98)
     
-    puntuaciones = df['Total']
+    puntuaciones = df['puntuacion']
     color_principal = config['visualizacion']['color_principal']
     
     # 1. Histograma principal (arriba izquierda)
@@ -176,10 +176,10 @@ ESTADÍSTICAS DESCRIPTIVAS
 def mostrar_resumen(df):
     """Muestra resumen estadístico en consola"""
     stats_dict = calcular_estadisticas(df)
-    puntuaciones = df['Total']
+    puntuaciones = df['puntuacion']
     
     print("\n" + "="*60)
-    print("📊 RESUMEN ESTADÍSTICO - LENGUA CASTELLANA Y LITERATURA (011)")
+    print("📊 RESUMEN ESTADÍSTICO - LENGUA CASTELLANA Y LITERATURA (004)")
     print("="*60)
     print(f"Total candidatos: {stats_dict['total']:,}")
     print(f"Puntuación máxima: {stats_dict['max']:.4f}")
