@@ -41,6 +41,7 @@ Baremo2025/
 │       ├── output/        # Resultados generados
 │       ├── config.yaml    # Configuración específica
 │       └── README.md      # Documentación detallada
+├── img/                    # Gráficos generados para documentación
 ├── data/                   # PDFs originales comunes
 ├── output/                 # Resultados globales (legacy)
 ├── config/                 # Configuración global
@@ -69,6 +70,11 @@ Baremo2025/
    python extractor_informatica.py
    ```
 
+4. **Generar visualización:**
+   ```bash
+   python visualizador_informatica.py
+   ```
+
 ### Método Legacy (Scripts Globales)
 
 1. **Analizar estructura del PDF:**
@@ -88,10 +94,11 @@ Baremo2025/
 
 ## 📊 Especialidades Disponibles
 
-- **✅ Informática (107)** - Páginas 2649-2697 - 343 candidatos - **IMPLEMENTADO**
+- **✅ Informática (107)** - Páginas 2649-2697 - 338 candidatos - **COMPLETADO**
   - 📁 `especialidades/informatica_107/`
-  - 🔧 Scripts específicos y configuración dedicada
-  - 📊 Validación contra datos conocidos
+  - 🔧 Extractor + Visualizador funcionales
+  - 📊 Validación exitosa contra datos conocidos
+  - 🎨 Gráficos profesionales generados
 - **🔧 Matemáticas (008)** - Configurable - **PLANIFICADO**
 - **🔧 Física y Química (010)** - Configurable - **PLANIFICADO**
 - **🔧 Lengua y Literatura** - Configurable - **PLANIFICADO**
@@ -104,14 +111,15 @@ pip install -r requirements.txt
 
 ## 📈 Ejemplo de Resultados
 
-![Análisis Informática 2025](output/baremo_informatica_107_2025.png)
+![Análisis Informática 2025](img/baremo_informatica_107_2025.png)
 
 ### Datos Extraídos
 
-- **📊 343 candidatos** de Informática en orden del PDF
-- **📈 Estadísticas completas** (media, mediana, percentiles)
+- **📊 338 candidatos** de Informática en orden del PDF
+- **📈 Estadísticas completas** (media: 4.31, mediana: 4.06, σ: 2.43)
 - **📋 Múltiples formatos** (CSV, TXT, Python list)
 - **🎨 Gráficos profesionales** con firma @joanh
+- **🔄 Validación exitosa** contra extractor legacy
 
 ## 🤝 Contribuir
 

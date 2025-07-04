@@ -119,57 +119,57 @@ def guardar_resultados(candidatos, config):
         # TXT con orden del PDF
         txt_path = OUTPUT_DIR / output_config['txt']
         with open(txt_path, 'w', encoding='utf-8') as f:
-            f.write(f"# {esp_config['nombre_completo']}\\n")
-            f.write(f"# Código: {esp_config['codigo']}\\n")
-            f.write(f"# Total candidatos: {len(candidatos)}\\n")
-            f.write(f"# Orden: Exacto del PDF oficial\\n\\n")
+            f.write(f"# {esp_config['nombre_completo']}\n")
+            f.write(f"# Código: {esp_config['codigo']}\n")
+            f.write(f"# Total candidatos: {len(candidatos)}\n")
+            f.write(f"# Orden: Exacto del PDF oficial\n\n")
             for i, puntuacion in enumerate(candidatos):
-                f.write(f"{i+1:3d}. {puntuacion:.4f}\\n")
+                f.write(f"{i+1:3d}. {puntuacion:.4f}\n")
         print(f"💾 Guardado: {txt_path.name}")
         
         # CSV con orden del PDF
         csv_path = OUTPUT_DIR / output_config['csv']
         with open(csv_path, 'w', encoding='utf-8') as f:
-            f.write("Posicion,Puntuacion_Total\\n")
+            f.write("Posicion,Puntuacion_Total\n")
             for i, puntuacion in enumerate(candidatos):
-                f.write(f"{i+1},{puntuacion:.4f}\\n")
+                f.write(f"{i+1},{puntuacion:.4f}\n")
         print(f"💾 Guardado: {csv_path.name}")
         
         # Lista Python directa
         py_path = OUTPUT_DIR / "lista_informatica_107.py"
         with open(py_path, 'w', encoding='utf-8') as f:
-            f.write(f"# {esp_config['nombre_completo']}\\n")
-            f.write(f"# Código: {esp_config['codigo']}\\n")
-            f.write(f"# Total: {len(candidatos)} candidatos\\n")
-            f.write(f"# Orden: EXACTO del PDF oficial\\n\\n")
-            f.write("puntuaciones_informatica = [\\n")
+            f.write(f"# {esp_config['nombre_completo']}\n")
+            f.write(f"# Código: {esp_config['codigo']}\n")
+            f.write(f"# Total: {len(candidatos)} candidatos\n")
+            f.write(f"# Orden: EXACTO del PDF oficial\n\n")
+            f.write("puntuaciones_informatica = [\n")
             for i, puntuacion in enumerate(candidatos):
-                f.write(f"    {puntuacion:.4f},  # {i+1:3d}\\n")
-            f.write("]\\n")
+                f.write(f"    {puntuacion:.4f},  # {i+1:3d}\n")
+            f.write("]\n")
         print(f"💾 Guardado: {py_path.name}")
         
         # Estadísticas detalladas
         stats_path = OUTPUT_DIR / output_config['estadisticas']
         with open(stats_path, 'w', encoding='utf-8') as f:
-            f.write(f"ESTADÍSTICAS - {esp_config['nombre_completo']}\\n")
-            f.write("=" * 60 + "\\n\\n")
-            f.write(f"📊 Total candidatos: {len(candidatos)}\\n")
-            f.write(f"🏆 Puntuación máxima: {max(candidatos):.4f}\\n")
-            f.write(f"📉 Puntuación mínima: {min(candidatos):.4f}\\n")
-            f.write(f"📈 Media: {sum(candidatos)/len(candidatos):.4f}\\n")
+            f.write(f"ESTADÍSTICAS - {esp_config['nombre_completo']}\n")
+            f.write("=" * 60 + "\n\n")
+            f.write(f"📊 Total candidatos: {len(candidatos)}\n")
+            f.write(f"🏆 Puntuación máxima: {max(candidatos):.4f}\n")
+            f.write(f"📉 Puntuación mínima: {min(candidatos):.4f}\n")
+            f.write(f"📈 Media: {sum(candidatos)/len(candidatos):.4f}\n")
             
             valores_unicos = len(set(candidatos))
-            f.write(f"🎯 Puntuaciones diferentes: {valores_unicos}\\n")
-            f.write(f"🔄 Candidatos con misma nota: {len(candidatos) - valores_unicos}\\n\\n")
+            f.write(f"🎯 Puntuaciones diferentes: {valores_unicos}\n")
+            f.write(f"🔄 Candidatos con misma nota: {len(candidatos) - valores_unicos}\n\n")
             
-            f.write("=== PRIMEROS 10 (orden PDF) ===\\n")
+            f.write("=== PRIMEROS 10 (orden PDF) ===\n")
             for i in range(min(10, len(candidatos))):
-                f.write(f"{i+1:3d}. {candidatos[i]:.4f}\\n")
+                f.write(f"{i+1:3d}. {candidatos[i]:.4f}\n")
             
-            f.write("\\n=== ÚLTIMOS 10 (orden PDF) ===\\n")
+            f.write("\n=== ÚLTIMOS 10 (orden PDF) ===\n")
             inicio = max(0, len(candidatos) - 10)
             for i in range(inicio, len(candidatos)):
-                f.write(f"{i+1:3d}. {candidatos[i]:.4f}\\n")
+                f.write(f"{i+1:3d}. {candidatos[i]:.4f}\n")
         
         print(f"💾 Guardado: {stats_path.name}")
         

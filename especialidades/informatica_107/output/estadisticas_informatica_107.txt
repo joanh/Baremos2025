@@ -1,1 +1,33 @@
-ESTADÍSTICAS - Profesores de Enseñanza Secundaria - Informática\n============================================================\n\n📊 Total candidatos: 338\n🏆 Puntuación máxima: 10.0000\n📉 Puntuación mínima: 0.0000\n📈 Media: 4.3089\n🎯 Puntuaciones diferentes: 198\n🔄 Candidatos con misma nota: 140\n\n=== PRIMEROS 10 (orden PDF) ===\n  1. 2.4167\n  2. 7.3333\n  3. 3.6500\n  4. 5.2084\n  5. 2.5000\n  6. 4.3333\n  7. 5.7500\n  8. 1.8000\n  9. 6.8500\n 10. 8.0000\n\n=== ÚLTIMOS 10 (orden PDF) ===\n329. 0.4000\n330. 4.6250\n331. 2.5000\n332. 4.5000\n333. 3.4167\n334. 3.5000\n335. 4.6000\n336. 8.0000\n337. 4.0000\n338. 3.1250\n
+ESTADÍSTICAS - Profesores de Enseñanza Secundaria - Informática
+============================================================
+
+📊 Total candidatos: 338
+🏆 Puntuación máxima: 10.0000
+📉 Puntuación mínima: 0.0000
+📈 Media: 4.3089
+🎯 Puntuaciones diferentes: 198
+🔄 Candidatos con misma nota: 140
+
+=== PRIMEROS 10 (orden PDF) ===
+  1. 2.4167
+  2. 7.3333
+  3. 3.6500
+  4. 5.2084
+  5. 2.5000
+  6. 4.3333
+  7. 5.7500
+  8. 1.8000
+  9. 6.8500
+ 10. 8.0000
+
+=== ÚLTIMOS 10 (orden PDF) ===
+329. 0.4000
+330. 4.6250
+331. 2.5000
+332. 4.5000
+333. 3.4167
+334. 3.5000
+335. 4.6000
+336. 8.0000
+337. 4.0000
+338. 3.1250
