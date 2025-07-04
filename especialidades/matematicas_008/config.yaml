@@ -1,0 +1,52 @@
+# Configuración para Matemáticas (008) - Baremo 2025
+# Comunidad de Madrid - Profesores de Enseñanza Secundaria
+
+especialidad:
+  codigo: "008"
+  nombre: "Matematicas"
+  nombre_completo: "Profesores de Enseñanza Secundaria - Matemáticas"
+  
+# Configuración de extracción del PDF
+pdf:
+  archivo_entrada: "baremo_matematicas_008_2025.pdf"
+  pagina_inicio: 662
+  pagina_fin: 924
+  
+# Patrones de búsqueda específicos para Matemáticas
+patrones:
+  # Patrón principal para identificar líneas de candidatos
+  linea_candidato: '^\d+\s+\d{8}[A-Z]\s+[A-ZÁÉÍÓÚÑÜ\s,]+\s+\d+[,\.]\d+'
+  
+  # Patrón para extraer puntuación total
+  puntuacion_total: '\d+[,\.]\d+(?=\s*$)'
+  
+  # Caracteres a limpiar
+  caracteres_limpiar: ['€', '‚', 'Ç', '§']
+
+output:
+  # Archivos de salida
+  csv: "puntuaciones_matematicas_008.csv"
+  txt: "puntuaciones_matematicas_008.txt" 
+  lista: "lista_matematicas_008.py"
+  estadisticas: "estadisticas_matematicas_008.txt"
+  grafico: "baremo_matematicas_008_2025.png"
+  
+  # Nombres de variables
+  variable_lista: "puntuaciones_matematicas"
+
+visualization:
+  titulo: "Baremo Matemáticas 2025 - Comunidad de Madrid"
+  color_primario: "steelblue"
+  color_secundario: "red"
+  tamaño_figura: [16, 6]
+  dpi: 300
+  firma: "@joanh"
+
+# Metadatos
+metadata:
+  año: 2025
+  convocatoria: "Provisional"
+  fuente: "Comunidad de Madrid"
+  fecha_publicacion: "2025-07-01"
+  autor_extraccion: "@joanh"
+  asistente: "Claude Sonnet 4.0"

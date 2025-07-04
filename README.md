@@ -35,8 +35,14 @@ Baremo2025/
 │   ├── extractor_ORDEN_REAL.py    # Extractor original (legacy)
 │   └── baremo2025.py              # Visualización general
 ├── especialidades/         # Directorios independientes por especialidad
-│   └── informatica_107/    # Informática (107) - IMPLEMENTADO
-│       ├── scripts/        # Scripts específicos de Informática
+│   ├── informatica_107/    # Informática (107) - IMPLEMENTADO
+│   │   ├── scripts/        # Scripts específicos de Informática
+│   │   ├── data/          # PDFs y archivos de entrada
+│   │   ├── output/        # Resultados generados
+│   │   ├── config.yaml    # Configuración específica
+│   │   └── README.md      # Documentación detallada
+│   └── matematicas_008/    # Matemáticas (008) - IMPLEMENTADO
+│       ├── scripts/        # Scripts específicos de Matemáticas
 │       ├── data/          # PDFs y archivos de entrada
 │       ├── output/        # Resultados generados
 │       ├── config.yaml    # Configuración específica
@@ -55,39 +61,62 @@ Baremo2025/
 ### Método Recomendado (Especialidades Independientes)
 
 1. **Navegar a la especialidad deseada:**
+
    ```bash
+   # Para Informática (107)
    cd especialidades/informatica_107
+   
+   # Para Matemáticas (008)
+   cd especialidades/matematicas_008
    ```
 
 2. **Colocar el PDF en data/:**
+
    ```bash
+   # Para Informática
    cp ../../data/rh03_257_2025_590_12_baremo_prov.pdf data/baremo_informatica_107_2025.pdf
+   
+   # Para Matemáticas
+   cp ../../data/rh03_257_2025_590_12_baremo_prov.pdf data/baremo_matematicas_008_2025.pdf
    ```
 
 3. **Ejecutar extractor específico:**
+
    ```bash
    cd scripts
+   # Para Informática
    python extractor_informatica.py
+   
+   # Para Matemáticas
+   python extractor_matematicas_CORREGIDO.py
    ```
 
 4. **Generar visualización:**
+
    ```bash
+   # Para Informática
    python visualizador_informatica.py
+   
+   # Para Matemáticas
+   python visualizador_matematicas_CORREGIDO.py
    ```
 
 ### Método Legacy (Scripts Globales)
 
 1. **Analizar estructura del PDF:**
+
    ```bash
    python src/analisis_forense_pdf.py
    ```
 
 2. **Extraer datos:**
+
    ```bash  
    python src/extractor_ORDEN_REAL.py
    ```
 
 3. **Generar visualización:**
+
    ```bash
    python src/baremo2025.py
    ```
@@ -99,7 +128,13 @@ Baremo2025/
   - 🔧 Extractor + Visualizador funcionales
   - 📊 Validación exitosa contra datos conocidos
   - 🎨 Gráficos profesionales generados
-- **🔧 Matemáticas (008)** - Configurable - **PLANIFICADO**
+
+- **✅ Matemáticas (008)** - Páginas 662-924 - 1,808 candidatos - **COMPLETADO**
+  - 📁 `especialidades/matematicas_008/`
+  - 🔧 Extractor + Visualizador funcionales
+  - 📊 Extracción exitosa (263 páginas procesadas)
+  - 🎨 Gráficos profesionales generados
+
 - **🔧 Física y Química (010)** - Configurable - **PLANIFICADO**
 - **🔧 Lengua y Literatura** - Configurable - **PLANIFICADO**
 
@@ -111,38 +146,46 @@ pip install -r requirements.txt
 
 ## 📈 Ejemplo de Resultados
 
+### Informática (107)
 ![Análisis Informática 2025](img/baremo_informatica_107_2025.png)
+
+### Matemáticas (008)
+![Análisis Matemáticas 2025](img/baremo_matematicas_008_2025.png)
 
 ### Datos Extraídos
 
-- **📊 338 candidatos** de Informática en orden del PDF
-- **📈 Estadísticas completas** (media: 4.31, mediana: 4.06, σ: 2.43)
-- **📋 Múltiples formatos** (CSV, TXT, Python list)
-- **🎨 Gráficos profesionales** con firma @joanh
-- **🔄 Validación exitosa** contra extractor legacy
+#### Informática (107)
+- **📊 338 candidatos** extraídos en orden del PDF
+- **📈 Estadísticas**: Media 4.31, Mediana 4.06, σ 2.43
+- **📋 Formatos**: CSV, TXT, Python list
+- **🎨 Gráficos**: Distribución + análisis por rangos
+
+#### Matemáticas (008)
+- **📊 1,808 candidatos** extraídos en orden del PDF
+- **📈 Estadísticas**: Media 4.68, Mediana 4.70, σ 2.74
+- **📋 Formatos**: CSV, TXT, Python list
+- **🎨 Gráficos**: Distribución + análisis por rangos
 
 ## 🤝 Contribuir
 
+Este proyecto está en desarrollo activo. Contribuciones bienvenidas:
+
 1. Fork del repositorio
-2. Crear rama para tu especialidad
-3. Añadir configuración para nuevas especialidades
-4. Pull request
+2. Crear rama para nueva funcionalidad
+3. Commit de cambios
+4. Push y crear Pull Request
 
-## 📝 Licencia
+## ⚖️ Aviso Legal
 
-MIT License
+- Los datos utilizados son **públicos** y oficiales
+- Este proyecto es **educativo** y no tiene fines comerciales
+- No se garantiza la exactitud de los resultados
+- Verificar siempre con fuentes oficiales
 
 ## ✍️ Autor
 
-**@joanh** - Análisis y visualización de datos de oposiciones
-
-### Metodología
-
-Este proyecto demuestra cómo realizar **minería de datos en PDFs complejos**:
-
-1. **🔍 Análisis forense** para entender la estructura
-2. **⚙️ Extracción precisa** manteniendo el orden original
-3. **📊 Visualización profesional** con estadísticas
+**@joanh** - Análisis y visualización de datos de oposiciones  
+Asistente: Claude Sonnet 4.0
 
 ---
-⭐ Si te resulta útil, ¡dale una estrella al repo!
+*📅 Última actualización: Julio 2025*
