@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Visualizador de Baremos - Lengua Castellana y Literatura 004
-Genera gráficos profesionales sin solapamientos - FORMATO ESTÁNDAR
+Genera gráficos profesionales sin solapamientos - BASADO EN FÍSICA Y QUÍMICA
 
 Autor: @joanh
 Asistente: Claude Sonnet 4.0
@@ -91,120 +91,97 @@ def main():
     # CREAR FIGURA
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
     fig.suptitle('Baremo Lengua Castellana y Literatura 2025 - Comunidad de Madrid', 
-                 fontsize=16, fontweight='bold', y=0.96)
+                 fontsize=18, fontweight='bold', y=0.95)
     
     # 1. HISTOGRAMA LIMPIO
     counts, bins, patches = ax1.hist(puntuaciones, bins=25, alpha=0.8, 
-                                    color='#2E8B57', edgecolor='white', linewidth=0.8)
+                                    color='darkblue', edgecolor='white', linewidth=0.8)
     
     # Curva normal superpuesta CORREGIDA
-    x_norm = np.linspace(min(puntuaciones), max(puntuaciones), 100)
-    y_norm = stats.norm.pdf(x_norm, media, desv_std)
-    # Escalar la curva normal para que coincida con el histograma
-    factor_escala = len(puntuaciones) * (bins[1] - bins[0])
-    y_norm_escalada = y_norm * factor_escala
-    ax1.plot(x_norm, y_norm_escalada, 'r-', linewidth=2, 
-            label=f'Distribución Normal μ={media:.2f}, σ={desv_std:.2f}')
+    mu, sigma = stats.norm.fit(puntuaciones)
+    x = np.linspace(puntuaciones.min(), puntuaciones.max(), 100)
+    y_normal = stats.norm.pdf(x, mu, sigma)
     
-    # Líneas de referencia
+    # Escalar correctamente la curva normal
+    bin_width = (puntuaciones.max() - puntuaciones.min()) / 25
+    scale_factor = len(puntuaciones) * bin_width
+    y_scaled = y_normal * scale_factor
+    
+    ax1.plot(x, y_scaled, 'red', linewidth=2.5, alpha=0.9,
+             label=f'Distribución Normal μ={mu:.2f}, σ={sigma:.2f}')
+    
+    # Línea de media VISIBLE
     ax1.axvline(media, color='red', linestyle='--', linewidth=2, alpha=0.8)
-    ax1.axvline(mediana, color='orange', linestyle='--', linewidth=2, alpha=0.8)
     
-    # Anotaciones en el histograma - CORREGIDO
-    ax1.text(0.02, 0.98, f'Total: {len(puntuaciones)} candidatos', 
-            transform=ax1.transAxes, fontsize=12, fontweight='bold',
-            verticalalignment='top', 
-            bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
-    
-    ax1.set_xlabel('Puntuación (0-10)', fontweight='bold')
-    ax1.set_ylabel('Número de Candidatos', fontweight='bold')
-    ax1.set_title('Distribución de Puntuaciones', fontweight='bold', pad=15)
-    ax1.grid(True, alpha=0.3)
+    # ETIQUETAS SIN SOLAPAMIENTOS
+    ax1.set_title('Distribución de Puntuaciones', fontsize=14, fontweight='bold', pad=15)
+    ax1.set_xlabel('Puntuación (0-10)', fontsize=12, fontweight='bold')
+    ax1.set_ylabel('Número de Candidatos', fontsize=12, fontweight='bold')
     ax1.legend(loc='upper right', fontsize=10)
-    ax1.set_xlim(0, 10)
+    ax1.grid(True, alpha=0.3)
+    
+    # TEXTO INFORMATIVO BIEN POSICIONADO
+    textstr = f'Total: {len(puntuaciones)} candidatos'
+    ax1.text(0.02, 0.98, textstr, transform=ax1.transAxes, fontsize=11,
+             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8))
     
     # 2. GRÁFICO DE BARRAS POR RANGOS
-    rangos = [(0, 2), (2, 4), (4, 6), (6, 8), (8, 10)]
-    etiquetas = ['0-2', '2-4', '4-6', '6-8', '8-10']
-    colores = ['#ffcccb', '#90EE90', '#ffeb9c', '#98FB98', '#4682B4']
+    ranges = ['0-2', '2-4', '4-6', '6-8', '8-10']
+    counts_ranges = [
+        np.sum((puntuaciones >= 0) & (puntuaciones < 2)),
+        np.sum((puntuaciones >= 2) & (puntuaciones < 4)),
+        np.sum((puntuaciones >= 4) & (puntuaciones < 6)),
+        np.sum((puntuaciones >= 6) & (puntuaciones < 8)),
+        np.sum((puntuaciones >= 8) & (puntuaciones <= 10))
+    ]
     
-    conteos = []
-    porcentajes = []
+    # Colores profesionales para Lengua y Literatura
+    colors = ['#FFB6C1', '#4169E1', '#FFFF99', '#4169E1', '#191970']
     
-    for min_r, max_r in rangos:
-        if min_r == 8:  # Incluir 10.0 en el último rango
-            count = sum(1 for p in puntuaciones if min_r <= p <= max_r)
-        else:
-            count = sum(1 for p in puntuaciones if min_r <= p < max_r)
-        conteos.append(count)
-        porcentajes.append((count / len(puntuaciones)) * 100)
+    bars = ax2.bar(ranges, counts_ranges, color=colors, alpha=0.8, edgecolor='white', linewidth=1)
     
-    barras = ax2.bar(etiquetas, conteos, color=colores, alpha=0.8, edgecolor='black', linewidth=1)
+    # ETIQUETAS EN LAS BARRAS (SIN SOLAPAMIENTOS)
+    for i, (bar, count) in enumerate(zip(bars, counts_ranges)):
+        height = bar.get_height()
+        percentage = (count / len(puntuaciones)) * 100
+        
+        # Etiqueta ENCIMA de la barra
+        ax2.text(bar.get_x() + bar.get_width()/2., height + 10,
+                f'{count}\n({percentage:.1f}%)',
+                ha='center', va='bottom', fontsize=10, fontweight='bold')
     
-    # Añadir etiquetas en las barras - LIMPIO
-    for i, (barra, count, porcentaje) in enumerate(zip(barras, conteos, porcentajes)):
-        altura = barra.get_height()
-        ax2.text(barra.get_x() + barra.get_width()/2., altura + max(conteos)*0.01,
-                f'{count}\n({porcentaje:.1f}%)', ha='center', va='bottom', 
-                fontweight='bold', fontsize=11)
-    
-    ax2.set_xlabel('Rango de Puntuaciones', fontweight='bold')
-    ax2.set_ylabel('Número de Candidatos', fontweight='bold')
-    ax2.set_title('Distribución por Rangos de Puntuación', fontweight='bold', pad=15)
+    ax2.set_title('Distribución por Rangos de Puntuación', fontsize=14, fontweight='bold', pad=15)
+    ax2.set_xlabel('Rango de Puntuaciones', fontsize=12, fontweight='bold')
+    ax2.set_ylabel('Número de Candidatos', fontsize=12, fontweight='bold')
     ax2.grid(True, alpha=0.3, axis='y')
-    ax2.set_ylim(0, max(conteos) * 1.15)
     
-    # Información adicional en la esquina - CORREGIDO
-    info_text = (f'Media: {media:.2f}\n'
-                f'Mediana: {mediana:.2f}\n'
-                f'Desv. Std: {desv_std:.2f}')
-    ax2.text(0.98, 0.98, info_text, transform=ax2.transAxes, 
-            fontsize=10, verticalalignment='top', horizontalalignment='right',
-            bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8))
+    # MÁRGENES AJUSTADOS PARA EVITAR CORTES
+    ax2.set_ylim(0, max(counts_ranges) * 1.15)
     
-    # Pie de página con información
-    fig.text(0.5, 0.02, '@joanh - Análisis de Baremos 2025 | Datos: Comunidad de Madrid', 
-            ha='center', fontsize=10, style='italic')
+    # FIRMA PROFESIONAL
+    fig.text(0.99, 0.01, '@joanh', fontsize=10, ha='right', va='bottom', 
+             style='italic', alpha=0.7)
     
-    # AJUSTAR LAYOUT Y GUARDAR
-    plt.tight_layout()
-    plt.subplots_adjust(top=0.90, bottom=0.12)
+    # AJUSTAR LAYOUT PARA EVITAR SOLAPAMIENTOS
+    plt.tight_layout(rect=[0, 0.03, 1, 0.93])
     
-    # Guardar archivos
+    # GUARDAR ARCHIVOS
     png_path = OUTPUT_DIR / "baremo_lengua_literatura_004_2025.png"
     pdf_path = OUTPUT_DIR / "baremo_lengua_literatura_004_2025.pdf"
     
     plt.savefig(png_path, dpi=300, bbox_inches='tight', facecolor='white')
     plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white')
     
-    print(f"✅ Gráfico PNG guardado: {png_path.name}")
-    print(f"✅ Gráfico PDF guardado: {pdf_path.name}")
+    plt.close()
     
-    # Resumen estadístico - CORREGIDO
-    print("\n" + "="*60)
-    print("📊 RESUMEN ESTADÍSTICO - LENGUA CASTELLANA Y LITERATURA (004)")
-    print("="*60)
-    print(f"Total candidatos: {len(puntuaciones):,}")
-    print(f"Puntuación máxima: {np.max(puntuaciones):.4f}")
-    print(f"Puntuación mínima: {np.min(puntuaciones):.4f}")
-    print(f"Puntuación media: {media:.4f}")
-    print(f"Desviación estándar: {desv_std:.4f}")
-    print(f"Mediana: {mediana:.4f}")
+    print(f"\n💾 Gráficos guardados:")
+    print(f"   - baremo_lengua_literatura_004_2025.png")
+    print(f"   - baremo_lengua_literatura_004_2025.pdf")
     
-    print("\nDISTRIBUCIÓN POR RANGOS:")
-    print("-" * 30)
-    for i, (etiqueta, count, porcentaje) in enumerate(zip(etiquetas, conteos, porcentajes)):
-        print(f"{etiqueta} puntos: {count:4d} candidatos ({porcentaje:5.1f}%)")
-    
-    # Test de normalidad
-    _, p_value = stats.shapiro(puntuaciones[:5000] if len(puntuaciones) > 5000 else puntuaciones)
-    normalidad = "Sí" if p_value > 0.05 else "No"
-    print(f"\\nDistribución normal: {normalidad} (p-value: {p_value:.4f})")
-    
-    print("="*60)
-    print("✅ Visualización completada exitosamente")
-    print("📁 Revisa la carpeta 'output' para los gráficos generados")
-    print(f"🖼️ Gráfico principal: {png_path.name}")
+    print(f"\n🎉 VISUALIZACIÓN COMPLETADA")
+    print(f"📈 {len(puntuaciones)} candidatos analizados")
+    print(f"📊 Gráficos profesionales generados")
+    print(f"✍️ Análisis realizado por @joanh")
 
 if __name__ == "__main__":
     main()
