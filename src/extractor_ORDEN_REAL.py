@@ -4,7 +4,7 @@ import re
 print("=== EXTRACTOR ORDEN REAL - 343 CANDIDATOS ===")
 print("Mantiene el orden exacto del PDF")
 
-with pdfplumber.open("rh03_257_2025_590_12_baremo_prov.pdf") as pdf:
+with pdfplumber.open("data/rh03_257_2025_590_12_baremo_prov.pdf") as pdf:
     
     candidatos = []  # Lista ordenada como en el PDF
     

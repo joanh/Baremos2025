@@ -57,9 +57,10 @@ def extraer_candidatos_informatica(config):
         with pdfplumber.open(archivo_pdf) as pdf:
             print("Extrayendo candidatos en orden del PDF...")
             
-            # Iterar por las páginas (ajustar índice 0-based)
-            inicio = pdf_config['pagina_inicio'] - 1
-            fin = pdf_config['pagina_fin']
+            # Iterar por las páginas (usar el mismo rango que el original)
+            # Original: range(2648, 2697) para páginas 2649-2697
+            inicio = 2648  # Índice 0-based para página 2649
+            fin = 2697     # Índice 0-based para página 2697
             
             for num_pagina in range(inicio, fin):
                 if num_pagina >= len(pdf.pages):
@@ -71,11 +72,11 @@ def extraer_candidatos_informatica(config):
                 try:
                     texto = page.extract_text()
                     if texto:
-                        lineas = texto.split('\\n')
+                        lineas = texto.split('\n')
                         
                         for linea in lineas:
                             if linea.startswith('****') and '*' in linea[4:]:
-                                numeros = re.findall(patrones['puntuacion'], linea)
+                                numeros = re.findall(r'\b(\d{1,2},\d{4})\b', linea)
                                 
                                 if numeros:
                                     primer_numero = numeros[0]
