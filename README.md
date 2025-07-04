@@ -7,6 +7,7 @@
 [![Pandas](https://img.shields.io/badge/pandas-1.3%2B-150458.svg)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/matplotlib-3.5%2B-11557c.svg)](https://matplotlib.org/)
 [![NumPy](https://img.shields.io/badge/numpy-1.21%2B-013243.svg)](https://numpy.org/)
+[![Claude](https://img.shields.io/badge/AI_Assistant-Claude_Sonnet_4.0-8A2BE2.svg)](https://www.anthropic.com/claude)
 
 Herramientas para extraer y analizar datos de baremos de oposiciones desde PDFs oficiales.
 
