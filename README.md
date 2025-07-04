@@ -1,12 +1,12 @@
 # Baremo2025 - Análisis de Oposiciones 📊
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 ![Work in Progress](https://img.shields.io/badge/status-work%20in%20progress-orange.svg)
-![PDFPlumber](https://img.shields.io/badge/pdfplumber-0.7%2B-green.svg)
-![Pandas](https://img.shields.io/badge/pandas-1.3%2B-150458.svg)
-![Matplotlib](https://img.shields.io/badge/matplotlib-3.5%2B-11557c.svg)
-![NumPy](https://img.shields.io/badge/numpy-1.21%2B-013243.svg)
+[![PDFPlumber](https://img.shields.io/badge/pdfplumber-0.7%2B-green.svg)](https://github.com/jsvine/pdfplumber)
+[![Pandas](https://img.shields.io/badge/pandas-1.3%2B-150458.svg)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/matplotlib-3.5%2B-11557c.svg)](https://matplotlib.org/)
+[![NumPy](https://img.shields.io/badge/numpy-1.21%2B-013243.svg)](https://numpy.org/)
 
 Herramientas para extraer y analizar datos de baremos de oposiciones desde PDFs oficiales.
 
