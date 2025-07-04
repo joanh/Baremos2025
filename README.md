@@ -18,6 +18,14 @@ Herramientas para extraer y analizar datos de baremos de oposiciones desde PDFs 
 - **Visualización profesional** con gráficos estadísticos
 - **Generalizable** para cualquier especialidad de oposiciones
 
+## 🪧 Datos Públicos
+
+Los datos tratados en este repositorio son públicos y fueron publicados el 1 de julio de 2025:
+
+👉 [Baremo Provisional - Comunidad de Madrid](https://www.comunidad.madrid/sites/default/files/doc/educacion/rh03/rh03_257_2025_590_12_baremo_prov.pdf)
+
+Una copia del PDF original se puede encontrar en `./data`
+
 ## 📁 Estructura
 
 ```
