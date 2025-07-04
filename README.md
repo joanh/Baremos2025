@@ -135,7 +135,12 @@ Baremo2025/
   - 📊 Extracción exitosa (263 páginas procesadas)
   - 🎨 Gráficos profesionales generados
 
-- **🔧 Física y Química (010)** - Configurable - **PLANIFICADO**
+- **✅ Física y Química (010)** - Páginas 925-1062 - 947 candidatos - **COMPLETADO**
+  - 📁 `especialidades/fisica_quimica_010/`
+  - 🔧 Extractor + Visualizador funcionales
+  - 📊 Extracción exitosa (138 páginas procesadas)
+  - 🎨 Gráficos profesionales generados
+
 - **🔧 Lengua y Literatura** - Configurable - **PLANIFICADO**
 
 ## 🔧 Requisitos
@@ -152,6 +157,9 @@ pip install -r requirements.txt
 ### Matemáticas (008)
 ![Análisis Matemáticas 2025](img/baremo_matematicas_008_2025.png)
 
+### Física y Química (010)
+![Análisis Física y Química 2025](img/baremo_fisica_quimica_010_2025.png)
+
 ### Datos Extraídos
 
 #### Informática (107)
@@ -163,6 +171,12 @@ pip install -r requirements.txt
 #### Matemáticas (008)
 - **📊 1,808 candidatos** extraídos en orden del PDF
 - **📈 Estadísticas**: Media 4.68, Mediana 4.70, σ 2.74
+- **📋 Formatos**: CSV, TXT, Python list
+- **🎨 Gráficos**: Distribución + análisis por rangos
+
+#### Física y Química (010)
+- **📊 947 candidatos** extraídos en orden del PDF
+- **📈 Estadísticas**: Media 4.97, Mediana 5.00, σ 2.72
 - **📋 Formatos**: CSV, TXT, Python list
 - **🎨 Gráficos**: Distribución + análisis por rangos
 
