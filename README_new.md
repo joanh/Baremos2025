@@ -4,9 +4,11 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Code Style](https://img.shields.io/badge/Code%20Style-Black-black.svg)](https://github.com/psf/black)
 [![PDF Processing](https://img.shields.io/badge/PDF-Processing-red.svg)](https://github.com/jmcarpenter2/pdfplumber)
-[![Data Science](https://img.shields.io/badge/Data-Science-orange.svg)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-blue.svg)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange.svg)](https://matplotlib.org/)
+[![SciPy](https://img.shields.io/badge/SciPy-Statistics-green.svg)](https://scipy.org/)
+[![Data Science](https://img.shields.io/badge/Data-Science-purple.svg)](https://pandas.pydata.org/)
 [![Education](https://img.shields.io/badge/Purpose-Education-brightgreen.svg)](https://github.com/joanh/Baremos2025)
 
 ## 📑 Índice de Especialidades (ordenadas por código)
@@ -172,11 +174,10 @@ pip install -r requirements.txt
 
 **Dependencias principales:**
 - Python 3.8+
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- pdfplumber
+- numpy (análisis numérico)
+- matplotlib (visualización)
+- scipy (estadísticas)
+- pdfplumber (extracción de PDFs)
 
 ## 📊 Metodología
 
