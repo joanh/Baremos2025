@@ -41,3 +41,4 @@ Thumbs.db
 backup/temp_*
 /confidencial
 README_new.md
+create_social_image.py
