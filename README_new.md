@@ -1,6 +1,5 @@
 # Baremos2025 📊
-
-Análisis completo de baremos de oposiciones de profesores de la Comunidad de Madrid para el año 2025.
+| **006** | [📐 Matemáticas](#-matemáticas-006) | 1,829 | ✅ | [Estadísticas](especialidades/matematicas_006/output/) \| [Gráfico](img/baremo_matematicas_006_2025.png) |Análisis completo de baremos de oposiciones de profesores de la Comunidad de Madrid para el año 2025.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -17,7 +16,7 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 |--------|--------------|------------|--------|---------------|
 | **001** | [🧠 Filosofía](#-filosofía-001) | 561 | ✅ | [Estadísticas](especialidades/filosofia_001/output/estadisticas_filosofia_001_completas.txt) \| [Gráfico](img/baremo_filosofia_001_2025.png) |
 | **004** | [📖 Lengua y Literatura](#-lengua-y-literatura-004) | 1,727 | ✅ | [Estadísticas](especialidades/lengua_literatura_004/output/) \| [Gráfico](img/baremo_lengua_literatura_004_2025.png) |
-| **008** | [📐 Matemáticas](#-matemáticas-008) | 1,829 | ✅ | [Estadísticas](especialidades/matematicas_008/output/) \| [Gráfico](img/baremo_matematicas_008_2025.png) |
+| **006** | [📐 Matemáticas](#-matemáticas-006) | 1,829 | ✅ | [Estadísticas](especialidades/matematicas_006/output/) \| [Gráfico](img/baremo_matematicas_006_2025.png) |
 | **010** | [⚗️ Física y Química](#-física-y-química-010) | 962 | ✅ | [Estadísticas](especialidades/fisica_quimica_010/output/) \| [Gráfico](img/baremo_fisica_quimica_010_2025.png) |
 | **011** | [🌍 Inglés](#-inglés-011) | 1,984 | ✅ | [Estadísticas](especialidades/ingles_011/output/estadisticas_ingles_011_completas.txt) \| [Gráfico](img/baremo_ingles_011_2025.png) |
 | **107** | [💻 Informática](#-informática-107) | 343 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
@@ -58,7 +57,7 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 
 ---
 
-## 📐 Matemáticas (008)
+## 📐 Matemáticas (006)
 
 ### Estadísticas Principales
 - **Candidatos:** 1,829
@@ -68,9 +67,9 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 - **Rango:** 0.00 - 13.00 puntos
 
 ### Gráfico de Distribución
-![Análisis Matemáticas 2025](img/baremo_matematicas_008_2025.png)
+![Análisis Matemáticas 2025](img/baremo_matematicas_006_2025.png)
 
-**📁 Datos completos:** [Carpeta Matemáticas](especialidades/matematicas_008/output/) | **📖 Documentación:** [README Matemáticas](especialidades/matematicas_008/)
+**📁 Datos completos:** [Carpeta Matemáticas](especialidades/matematicas_006/output/) | **📖 Documentación:** [README Matemáticas](especialidades/matematicas_006/)
 
 ---
 

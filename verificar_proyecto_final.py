@@ -74,7 +74,7 @@ def resumen_proyecto():
     print("📂 ESTRUCTURA LISTA PARA GITHUB:")
     print("   ✅ Filosofía (001): 561 candidatos")
     print("   ✅ Informática (107): 343 candidatos") 
-    print("   ✅ Matemáticas (008): 1,829 candidatos")
+    print("   ✅ Matemáticas (006): 1,829 candidatos")
     print("   ✅ Física y Química (010): 962 candidatos")
     print("   ✅ Lengua y Literatura (004): 1,727 candidatos")
     print("   📊 TOTAL: 5,422 candidatos")

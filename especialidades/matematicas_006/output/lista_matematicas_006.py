@@ -1,4 +1,4 @@
-# Puntuaciones de Matemáticas (008) - Baremo 2025
+# Puntuaciones de Matemáticas (006) - Baremo 2025
 # Extraídas en orden original del PDF
 # Páginas 662-924
 

@@ -10,7 +10,7 @@ from pathlib import Path
 def analizar_pagina_matematicas(pagina_num):
     """Analiza una página específica de Matemáticas"""
     
-    pdf_path = Path("../data/baremo_matematicas_008_2025.pdf")
+    pdf_path = Path("../data/baremo_matematicas_006_2025.pdf")
     
     try:
         with pdfplumber.open(pdf_path) as pdf:

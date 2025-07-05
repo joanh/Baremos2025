@@ -194,7 +194,7 @@ bilingual-education
 english-as-second-language
 ```
 
-### **Matemáticas (008)**
+### **Matemáticas (006)**
 ```
 mathematics-education
 math-teachers

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Visualizador de Baremos - Matemáticas 008 (CORREGIDO)
+Visualizador de Baremos - Matemáticas 006 (CORREGIDO)
 Genera gráficos profesionales sin solapamientos
 
 Autor: @joanh
@@ -32,7 +32,7 @@ def cargar_configuracion():
 
 def cargar_datos():
     """Carga los datos extraídos"""
-    lista_py = OUTPUT_DIR / "lista_matematicas_008.py"
+    lista_py = OUTPUT_DIR / "lista_matematicas_006.py"
     
     if lista_py.exists():
         try:
@@ -57,7 +57,7 @@ def cargar_datos():
 
 def main():
     """Función principal"""
-    print("🎨 Iniciando visualizador de Matemáticas 008...")
+    print("🎨 Iniciando visualizador de Matemáticas 006...")
     
     # Cargar configuración
     config = cargar_configuracion()
@@ -161,28 +161,92 @@ def main():
     # FIRMA PROFESIONAL
     fig.text(0.99, 0.01, '@joanh', fontsize=10, ha='right', va='bottom', 
              style='italic', alpha=0.7)
+    ax1.plot(x, y_normal_scaled, 'red', linewidth=3, 
+             label='Distribución Normal\\nμ={:.2f}, σ={:.2f}'.format(mu, sigma))
     
-    # AJUSTAR LAYOUT PARA EVITAR SOLAPAMIENTOS
-    plt.tight_layout(rect=[0, 0.03, 1, 0.93])
+    ax1.set_xlabel('Puntuación (0-10)', fontweight='bold')
+    ax1.set_ylabel('Número de Candidatos', fontweight='bold')
+    ax1.set_title('Distribución de Puntuaciones', fontweight='bold', pad=20)
+    ax1.legend(fontsize=10)
+    ax1.grid(True, alpha=0.3)
+    ax1.set_xlim(0, 10)
     
-    # GUARDAR ARCHIVOS
-    output_config = config['output']
+    # Líneas de referencia
+    ax1.axvline(np.mean(puntuaciones), color='red', linestyle='--', alpha=0.8, linewidth=2)
+    ax1.axvline(np.median(puntuaciones), color='green', linestyle='--', alpha=0.8, linewidth=2)
     
-    # PNG (alta calidad)
-    png_path = OUTPUT_DIR / output_config['grafico']
-    plt.savefig(png_path, dpi=300, bbox_inches='tight', facecolor='white')
+    # Texto con estadísticas clave
+    stats_text = 'Media: {:.2f}\\n'.format(np.mean(puntuaciones))
+    stats_text += 'Mediana: {:.2f}\\n'.format(np.median(puntuaciones))
+    stats_text += 'Desv. Est.: {:.2f}\\n'.format(np.std(puntuaciones))
+    stats_text += 'Total: {} candidatos'.format(len(puntuaciones))
+    ax1.text(0.02, 0.98, stats_text, transform=ax1.transAxes, 
+             bbox=dict(boxstyle="round,pad=0.4", facecolor="wheat", alpha=0.9),
+             verticalalignment='top', fontsize=10, fontweight='bold')
     
-    # PDF (vectorial)
-    pdf_path = OUTPUT_DIR / output_config['grafico'].replace('.png', '.pdf')
-    plt.savefig(pdf_path, dpi=300, bbox_inches='tight', facecolor='white')
+    # 2. CANDIDATOS POR RANGO CON GRADIENTE DE COLOR
+    rangos = [(0, 2), (2, 4), (4, 6), (6, 8), (8, 10)]
+    rangos_nombres = ['0-2', '2-4', '4-6', '6-8', '8-10']
+    rangos_counts = []
+    rangos_porcentajes = []
     
-    plt.close()
+    for min_r, max_r in rangos:
+        count = np.sum((puntuaciones >= min_r) & (puntuaciones < max_r))
+        porcentaje = (count / len(puntuaciones)) * 100
+        rangos_counts.append(count)
+        rangos_porcentajes.append(porcentaje)
     
-    print(f"\n💾 Gráficos guardados:")
-    print(f"   - {output_config['grafico']}")
-    print(f"   - {output_config['grafico'].replace('.png', '.pdf')}")
+    # Crear gradiente de color basado en porcentajes
+    norm = mcolors.Normalize(vmin=min(rangos_porcentajes), vmax=max(rangos_porcentajes))
+    colormap = plt.cm.RdYlBu_r  # Rojo para pocos, azul para muchos
     
-    print(f"\n🎉 VISUALIZACIÓN COMPLETADA")
+    # Crear barras con gradiente
+    bars = ax2.bar(rangos_nombres, rangos_counts, 
+                   color=[colormap(norm(p)) for p in rangos_porcentajes],
+                   edgecolor='black', linewidth=1.5, alpha=0.8)
+    
+    ax2.set_xlabel('Rango de Puntuaciones', fontweight='bold')
+    ax2.set_ylabel('Número de Candidatos', fontweight='bold')
+    ax2.set_title('Distribución por Rangos de Puntuación', fontweight='bold', pad=20)
+    ax2.grid(True, alpha=0.3, axis='y')
+    
+    # Añadir valores y porcentajes en las barras
+    for bar, count, porcentaje in zip(bars, rangos_counts, rangos_porcentajes):
+        height = bar.get_height()
+        ax2.text(bar.get_x() + bar.get_width()/2., height + max(rangos_counts)*0.01,
+                 '{}\\n({:.1f}%)'.format(count, porcentaje),
+                 ha='center', va='bottom', fontweight='bold', fontsize=10)
+    
+    # Añadir barra de color para explicar el gradiente
+    sm = plt.cm.ScalarMappable(cmap=colormap, norm=norm)
+    sm.set_array([])
+    cbar = plt.colorbar(sm, ax=ax2, shrink=0.6, aspect=20)
+    cbar.set_label('Porcentaje de Candidatos (%)', rotation=270, labelpad=20, fontweight='bold')
+    
+    # AUTOR
+    fig.text(0.99, 0.01, '@joanh', fontsize=10, color='gray', alpha=0.7, 
+             ha='right', va='bottom', style='italic', weight='bold')
+    
+    plt.tight_layout()
+    
+    # Crear directorio de salida si no existe
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    
+    # Guardar gráficos
+    png_path = OUTPUT_DIR / "baremo_matematicas_006_2025.png"
+    pdf_path = OUTPUT_DIR / "baremo_matematicas_006_2025.pdf"
+    
+    plt.savefig(png_path, dpi=300, bbox_inches='tight')
+    plt.savefig(pdf_path, bbox_inches='tight')
+    
+    print(f"\\n💾 Gráficos guardados:")
+    print(f"   - {png_path.name}")
+    print(f"   - {pdf_path.name}")
+    
+    # Mostrar gráfico
+    plt.show()
+    
+    print(f"\\n🎉 VISUALIZACIÓN COMPLETADA")
     print(f"📈 {len(puntuaciones)} candidatos analizados")
     print(f"📊 Gráficos profesionales generados")
     print(f"✍️ Análisis realizado por @joanh")

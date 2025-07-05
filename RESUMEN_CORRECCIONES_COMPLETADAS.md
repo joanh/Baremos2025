@@ -22,7 +22,7 @@ TAREAS COMPLETADAS:
    - Estadísticas completas generadas
 
 3. ✅ README.MD - REORGANIZACIÓN COMPLETA:
-   - Especialidades ordenadas por código (001, 004, 008, 010, 011, 107)
+   - Especialidades ordenadas por código (001, 004, 006, 010, 011, 107)
    - Datos actualizados de Filosofía e Inglés
    - Total de candidatos corregido: 7,406
    - Enlaces actualizados a archivos de estadísticas

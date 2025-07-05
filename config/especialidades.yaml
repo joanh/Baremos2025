@@ -18,7 +18,7 @@ especialidades:
     total_candidatos: 343
   
   MATEMATICAS:
-    codigo: "008"
+    codigo: "006"
     nombre: "MATEMATICAS"
     pagina_inicio: null  # Configurar según PDF
     pagina_fin: null     # Configurar según PDF

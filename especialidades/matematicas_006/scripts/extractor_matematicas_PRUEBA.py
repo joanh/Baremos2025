@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Extractor de Baremos - Matemáticas 008
+Extractor de Baremos - Matemáticas 006 (VERSIÓN PRUEBA)
 Extrae datos manteniendo el orden original del PDF
 
-Páginas: 662-924 (262 páginas)
+Páginas: 662-680 (18 páginas para prueba)
 Autor: @joanh
 Asistente: Claude Sonnet 4.0
 """
@@ -15,6 +15,7 @@ import yaml
 import pdfplumber
 import pandas as pd
 from pathlib import Path
+import time
 
 # Configurar rutas
 SCRIPT_DIR = Path(__file__).parent
@@ -53,15 +54,19 @@ def extraer_puntuacion(linea, patron_puntuacion):
             return None
     return None
 
-def procesar_pagina(page, config):
+def procesar_pagina(page, config, num_pagina):
     """Procesa una página individual del PDF"""
     candidatos_pagina = []
     patrones = config['patrones']
+    
+    print(f"  📄 Procesando página {num_pagina}...", end=' ', flush=True)
+    start_time = time.time()
     
     try:
         # Extraer texto de la página
         texto = page.extract_text()
         if not texto:
+            print("(sin texto)")
             return candidatos_pagina
         
         # Limpiar caracteres problemáticos
@@ -85,15 +90,18 @@ def procesar_pagina(page, config):
                         'linea': linea,
                         'puntuacion': puntuacion
                     })
+        
+        elapsed = time.time() - start_time
+        print(f"✅ {len(candidatos_pagina)} candidatos ({elapsed:.1f}s)")
                     
     except Exception as e:
-        print(f"⚠️ Error procesando página: {e}")
+        print(f"❌ Error: {e}")
     
     return candidatos_pagina
 
 def main():
     """Función principal"""
-    print("🔧 Iniciando extractor de Matemáticas 008...")
+    print("🔧 Iniciando extractor PRUEBA de Matemáticas 006...")
     
     # Cargar configuración
     config = cargar_configuracion()
@@ -111,6 +119,8 @@ def main():
         print(f"💡 Copia el PDF principal a: {pdf_path}")
         sys.exit(1)
     
+    print(f"📁 PDF encontrado: {pdf_path.name}")
+    
     # Crear directorio de salida si no existe
     OUTPUT_DIR.mkdir(exist_ok=True)
     
@@ -118,9 +128,10 @@ def main():
     candidatos_totales = []
     
     try:
+        print("📖 Abriendo PDF...")
         with pdfplumber.open(pdf_path) as pdf:
             total_paginas = pdf_config['pagina_fin'] - pdf_config['pagina_inicio'] + 1
-            print(f"📖 Procesando {total_paginas} páginas...")
+            print(f"📊 Procesando {total_paginas} páginas (modo PRUEBA)...")
             
             for num_pagina in range(pdf_config['pagina_inicio'], pdf_config['pagina_fin'] + 1):
                 try:
@@ -129,13 +140,10 @@ def main():
                     
                     if page_index < len(pdf.pages):
                         page = pdf.pages[page_index]
-                        candidatos_pagina = procesar_pagina(page, config)
+                        candidatos_pagina = procesar_pagina(page, config, num_pagina)
                         candidatos_totales.extend(candidatos_pagina)
-                        
-                        if candidatos_pagina:
-                            print(f"✅ Página {num_pagina}: {len(candidatos_pagina)} candidatos")
-                        else:
-                            print(f"⚠️ Página {num_pagina}: Sin candidatos")
+                    else:
+                        print(f"⚠️ Página {num_pagina}: Fuera de rango")
                     
                 except Exception as e:
                     print(f"❌ Error en página {num_pagina}: {e}")
@@ -148,6 +156,7 @@ def main():
     # Procesar resultados
     if not candidatos_totales:
         print("❌ No se encontraron candidatos")
+        print("💡 Verifica que las páginas contengan datos de Matemáticas")
         sys.exit(1)
     
     print(f"\n🎉 EXTRACCIÓN COMPLETADA")
@@ -174,39 +183,22 @@ def main():
     df.to_csv(csv_path, index=False, encoding='utf-8')
     print(f"💾 CSV guardado: {csv_path.name}")
     
-    # 2. TXT
-    txt_path = OUTPUT_DIR / output_config['txt']
-    with open(txt_path, 'w', encoding='utf-8') as f:
-        for i, candidato in enumerate(candidatos_totales, 1):
-            f.write(f"{i}. {candidato['puntuacion']:.4f} - {candidato['linea']}\n")
-    print(f"💾 TXT guardado: {txt_path.name}")
-    
-    # 3. Lista Python
+    # 2. Lista Python
     lista_path = OUTPUT_DIR / output_config['lista']
     with open(lista_path, 'w', encoding='utf-8') as f:
-        f.write("# Puntuaciones de Matemáticas (008) - Baremo 2025\n")
+        f.write("# Puntuaciones de Matemáticas (006) - Baremo 2025\n")
         f.write("# Extraídas en orden original del PDF\n")
-        f.write("# Páginas 662-924\n\n")
+        f.write(f"# Páginas {pdf_config['pagina_inicio']}-{pdf_config['pagina_fin']} (PRUEBA)\n\n")
         f.write(f"{output_config['variable_lista']} = [\n")
         for puntuacion in puntuaciones:
             f.write(f"    {puntuacion:.4f},\n")
         f.write("]\n")
     print(f"💾 Lista Python guardada: {lista_path.name}")
     
-    # 4. Estadísticas
-    stats_path = OUTPUT_DIR / output_config['estadisticas']
-    with open(stats_path, 'w', encoding='utf-8') as f:
-        f.write(f"=== ESTADÍSTICAS MATEMÁTICAS (008) - 2025 ===\n")
-        f.write(f"Total candidatos: {len(candidatos_totales)}\n")
-        f.write(f"Puntuación máxima: {max(puntuaciones):.4f}\n")
-        f.write(f"Puntuación mínima: {min(puntuaciones):.4f}\n")
-        f.write(f"Puntuación media: {sum(puntuaciones)/len(puntuaciones):.4f}\n")
-        f.write(f"Páginas procesadas: {pdf_config['pagina_inicio']}-{pdf_config['pagina_fin']}\n")
-        f.write(f"Extraído por: @joanh\n")
-    print(f"💾 Estadísticas guardadas: {stats_path.name}")
-    
-    print(f"\n✅ Todos los archivos guardados en: {OUTPUT_DIR}")
+    print(f"\n✅ Archivos guardados en: {OUTPUT_DIR}")
     print(f"🔄 Siguiente paso: python visualizador_matematicas.py")
+    print(f"\n💡 NOTA: Esta es una extracción de PRUEBA de {total_paginas} páginas.")
+    print(f"💡 Para extraer todas las páginas (662-924), cambia pagina_fin a 924 en config.yaml")
 
 if __name__ == "__main__":
     main()

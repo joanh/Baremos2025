@@ -1,4 +1,4 @@
-=== ESTADÍSTICAS MATEMÁTICAS (008) - 2025 ===
+=== ESTADÍSTICAS MATEMÁTICAS (006) - 2025 ===
 Total candidatos: 1808
 Puntuación máxima: 10.0000
 Puntuación mínima: 0.0000

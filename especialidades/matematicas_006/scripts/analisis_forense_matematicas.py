@@ -15,7 +15,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 ESPECIALIDAD_DIR = SCRIPT_DIR.parent
 DATA_DIR = ESPECIALIDAD_DIR / "data"
-PDF_PATH = DATA_DIR / "baremo_matematicas_008_2025.pdf"
+PDF_PATH = DATA_DIR / "baremo_matematicas_006_2025.pdf"
 
 # Si no existe, usar el PDF global
 if not PDF_PATH.exists():
@@ -24,7 +24,7 @@ if not PDF_PATH.exists():
 def buscar_matematicas_en_pdf():
     """Busca las páginas que contienen información de Matemáticas"""
     
-    print("🔍 ANÁLISIS FORENSE - MATEMÁTICAS (008)")
+    print("🔍 ANÁLISIS FORENSE - MATEMÁTICAS (006)")
     print("=" * 60)
     
     if not PDF_PATH.exists():

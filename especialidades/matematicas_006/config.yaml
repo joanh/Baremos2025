@@ -1,14 +1,14 @@
-# Configuración para Matemáticas (008) - Baremo 2025
+# Configuración para Matemáticas (006) - Baremo 2025
 # Comunidad de Madrid - Profesores de Enseñanza Secundaria
 
 especialidad:
-  codigo: "008"
+  codigo: "006"
   nombre: "Matematicas"
   nombre_completo: "Profesores de Enseñanza Secundaria - Matemáticas"
   
 # Configuración de extracción del PDF
 pdf:
-  archivo_entrada: "baremo_matematicas_008_2025.pdf"
+  archivo_entrada: "baremo_matematicas_006_2025.pdf"
   pagina_inicio: 662
   pagina_fin: 924
   
@@ -25,11 +25,11 @@ patrones:
 
 output:
   # Archivos de salida
-  csv: "puntuaciones_matematicas_008.csv"
-  txt: "puntuaciones_matematicas_008.txt" 
-  lista: "lista_matematicas_008.py"
-  estadisticas: "estadisticas_matematicas_008.txt"
-  grafico: "baremo_matematicas_008_2025.png"
+  csv: "puntuaciones_matematicas_006.csv"
+  txt: "puntuaciones_matematicas_006.txt" 
+  lista: "lista_matematicas_006.py"
+  estadisticas: "estadisticas_matematicas_006.txt"
+  grafico: "baremo_matematicas_006_2025.png"
   
   # Nombres de variables
   variable_lista: "puntuaciones_matematicas"

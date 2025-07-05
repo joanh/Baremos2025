@@ -1,10 +1,10 @@
-# Matemáticas (008) - Baremo 2025 📐
+# Matemáticas (006) - Baremo 2025 📐
 
-Extracción y análisis de datos para la especialidad de **Matemáticas** (código 008) del baremo provisional de oposiciones 2025 de la Comunidad de Madrid.
+Extracción y análisis de datos para la especialidad de **Matemáticas** (código 006) del baremo provisional de oposiciones 2025 de la Comunidad de Madrid.
 
 ## 📊 Información de la Especialidad
 
-- **Código**: 008
+- **Código**: 006
 - **Nombre**: Matemáticas  
 - **Nivel**: Profesores de Enseñanza Secundaria
 - **Total candidatos**: 1,808
@@ -42,18 +42,18 @@ python visualizador_matematicas_CORREGIDO.py
 - **6-8 puntos**: 421 candidatos (23.3%)
 - **8-10 puntos**: 251 candidatos (13.9%)
 
-![Gráfico Matemáticas](../../img/baremo_matematicas_008_2025.png)
+![Gráfico Matemáticas](../../img/baremo_matematicas_006_2025.png)
 
 ## 📁 Estructura
 
 ```
-matematicas_008/
+matematicas_006/
 ├── scripts/
 │   ├── analisis_forense_matematicas.py  # Buscar páginas de Matemáticas
 │   ├── extractor_matematicas.py         # Extractor específico
 │   └── visualizador_matematicas.py      # Gráficos profesionales
 ├── data/
-│   └── baremo_matematicas_008_2025.pdf  # PDF específico (opcional)
+│   └── baremo_matematicas_006_2025.pdf  # PDF específico (opcional)
 ├── output/                               # Resultados generados
 ├── config.yaml                          # Configuración de la especialidad
 └── README.md                            # Este archivo
@@ -69,11 +69,11 @@ El archivo `config.yaml` contiene:
 
 ## 🎯 Archivos Generados
 
-- `puntuaciones_matematicas_008.csv` - Datos en formato CSV
-- `puntuaciones_matematicas_008.txt` - Lista legible
-- `lista_matematicas_008.py` - Array de Python
-- `estadisticas_matematicas_008.txt` - Estadísticas básicas
-- `baremo_matematicas_008_2025.png/pdf` - Gráficos profesionales
+- `puntuaciones_matematicas_006.csv` - Datos en formato CSV
+- `puntuaciones_matematicas_006.txt` - Lista legible
+- `lista_matematicas_006.py` - Array de Python
+- `estadisticas_matematicas_006.txt` - Estadísticas básicas
+- `baremo_matematicas_006_2025.png/pdf` - Gráficos profesionales
 
 ## 📈 Ejemplo de Resultados
 

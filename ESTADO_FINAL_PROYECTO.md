@@ -37,7 +37,7 @@ ESTADO FINAL DEL REPOSITORIO:
 📊 ESPECIALIDADES INTEGRADAS (6):
 - 001 - Filosofía: 561 candidatos
 - 004 - Lengua y Literatura: 1,727 candidatos  
-- 008 - Matemáticas: 1,829 candidatos
+- 006 - Matemáticas: 1,829 candidatos
 - 010 - Física y Química: 962 candidatos
 - 011 - Inglés: 1,984 candidatos
 - 107 - Informática: 343 candidatos
