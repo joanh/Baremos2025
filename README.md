@@ -1,4 +1,32 @@
-# Baremo2025 - Análisis de Oposiciones 📊
+# Baremo2025 - ## 📑 Índice de Contenidos
+
+| Especialidad | Candidatos | Acceso Rápido |
+|--------------|------------|---------------|
+| [📊 **Filosofía (001)**](#-filosofía-001) | 561 | [Ver Análisis](#-filosofía-001) |
+| [📊 **Informática (107)**](#-informática-107) | 343 | [Ver Análisis](#-informática-107) |
+| [📊 **Matemáticas (008)**](#-matemáticas-008) | 1,829 | [Ver Análisis](#-matemáticas-008) |
+| [📊 **Física y Química (010)**](#-física-y-química-010) | 962 | [Ver Análisis](#-física-y-química-010) |
+| [📊 **Lengua y Literatura (004)**](#-lengua-y-literatura-004) | 1,727 | [Ver Análisis](#-lengua-y-literatura-004) |
+
+**Total candidatos analizados: 5,422** 📊
+
+---
+
+## 📊 Filosofía (001)
+
+### Estadísticas Principales
+- **Candidatos:** 561
+- **Media:** 4.63 puntos
+- **Desviación estándar:** 2.46
+- **Mediana:** 4.62 puntos
+- **Rango:** 0.00 - 14.61 puntos
+
+### Gráfico de Distribución
+![Análisis Filosofía 2025](img/baremo_filosofia_001_2025.png)
+
+**📁 Datos completos:** [Carpeta Filosofía](especialidades/filosofia_001/output/) | **📖 Documentación:** [README Filosofía](especialidades/filosofia_001/README.md)
+
+---Oposiciones 📊
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)

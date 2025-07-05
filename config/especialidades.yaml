@@ -1,4 +1,13 @@
 especialidades:
+  FILOSOFIA:
+    codigo: "001"
+    nombre: "FILOSOFIA"
+    pagina_inicio: 2
+    pagina_fin: 82
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Filosofía"
+    total_candidatos: 561  # 80 páginas × 7 + 1 candidato final
+  
   INFORMATICA:
     codigo: "107"
     nombre: "INFORMATICA" 

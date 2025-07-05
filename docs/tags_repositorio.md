@@ -1,4 +1,4 @@
-# 🏷️ Tags Sugeridos para Baremos2025
+![1751699992917](image/tags_repositorio/1751699992917.png)![1751700000705](image/tags_repositorio/1751700000705.png)# 🏷️ Tags Sugeridos para Baremos2025
 
 ## 📊 **TAGS PRINCIPALES (GitHub Topics)**
 
@@ -165,6 +165,15 @@ secundaria
 
 ## 🎨 **TAGS POR ESPECIALIDAD**
 
+### **Filosofía (001)**
+```
+philosophy-education
+philosophy-teachers
+ethics-education
+critical-thinking
+humanities-teachers
+```
+
 ### **Informática (107)**
 ```
 computer-science-education
@@ -228,7 +237,7 @@ topics:
 ### **Descripción Sugerida del Repo**
 ```
 🇪🇸 Herramientas Python para extraer y analizar datos de baremos de oposiciones desde PDFs oficiales. 
-Incluye 4 especialidades (Informática, Matemáticas, Física y Química, Lengua y Literatura) 
+Incluye 5 especialidades (Filosofía, Informática, Matemáticas, Física y Química, Lengua y Literatura) 
 con visualizaciones profesionales y arquitectura modular. | 
 🇬🇧 Python tools for extracting and analyzing Spanish government teacher exam data from official PDFs.
 ```

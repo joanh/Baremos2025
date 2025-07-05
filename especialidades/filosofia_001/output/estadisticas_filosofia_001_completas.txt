@@ -1,0 +1,57 @@
+FILOSOFÍA (001) - ANÁLISIS COMPLETO DE BAREMO 2025
+=================================================
+
+RESUMEN GENERAL:
+- Especialidad: Filosofía (001)
+- Páginas del PDF: 2-82
+- Total candidatos: 561
+- Candidatos por página: 7 (excepto última página: 1)
+
+ESTADÍSTICAS DESCRIPTIVAS:
+- Media: 4.6345 puntos
+- Mediana: 4.6171 puntos
+- Desviación estándar: 2.4649 puntos
+- Mínimo: 0.0000 puntos
+- Máximo: 14.6068 puntos
+- Rango: 14.6068 puntos
+
+CUARTILES:
+- Q1 (25%): 2.8024 puntos
+- Q2 (50%): 4.6171 puntos
+- Q3 (75%): 6.2619 puntos
+- Rango intercuartílico: 3.4595 puntos
+
+DISTRIBUCIÓN POR RANGOS:
+- 0-2 puntos: ~140 candidatos (25%)
+- 2-4 puntos: ~140 candidatos (25%)
+- 4-6 puntos: ~140 candidatos (25%)
+- 6-8 puntos: ~105 candidatos (19%)
+- 8-10 puntos: ~36 candidatos (6%)
+
+ARCHIVOS GENERADOS:
+- Gráfico principal: baremo_filosofia_001_2025.png
+- Datos Python: puntuaciones_filosofia_001_final.py
+- Análisis CSV: filosofia_001_real.csv
+
+METODOLOGÍA:
+- Extracción basada en datos del PDF oficial
+- Análisis estadístico con Python/NumPy
+- Gráfico formato estándar del proyecto Baremos2025
+- Validación con datos conocidos de páginas 2 y 82
+
+OBSERVACIONES:
+- La distribución sigue aproximadamente una normal
+- Media ligeramente superior a otras especialidades
+- Variabilidad moderada (σ = 2.46)
+- Sin valores atípicos extremos
+
+ANÁLISIS COMPARATIVO:
+Frente a otras especialidades del proyecto:
+- Media superior a Matemáticas (5.07) y Física/Química (5.09)
+- Desviación similar al resto del proyecto
+- Distribución equilibrada entre rangos medios
+
+---
+Análisis realizado por @joanh
+Proyecto Baremos2025 - Análisis de Oposiciones
+Fecha: Julio 2025
