@@ -9,6 +9,7 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange.svg)](https://matplotlib.org/)
 [![SciPy](https://img.shields.io/badge/SciPy-Statistics-green.svg)](https://scipy.org/)
 [![Data Science](https://img.shields.io/badge/Data-Science-purple.svg)](https://pandas.pydata.org/)
+[![AI Assistant](https://img.shields.io/badge/AI%20Assistant-Claude%20Sonnet-ff6b35.svg)](https://claude.ai/)
 [![Education](https://img.shields.io/badge/Purpose-Education-brightgreen.svg)](https://github.com/joanh/Baremos2025)
 
 ## 📑 Índice de Especialidades (ordenadas por código)
@@ -197,7 +198,21 @@ Este proyecto demuestra cómo realizar **minería de datos en PDFs complejos**:
 4. Crear análisis siguiendo el patrón establecido
 5. Pull request con documentación completa
 
-## 📝 Licencia
+## � Análisis del Repositorio
+
+Para una evaluación técnica completa del proyecto, incluyendo análisis de código, utilidad práctica y valor educativo, consulta:
+
+**📋 [Análisis Completo del Repositorio por Claude Sonnet 3.5](docs/analisis_repositorioByClaudeSonnet4.md)**
+
+Este documento incluye:
+- Evaluación técnica detallada (9.7/10)
+- Análisis de impacto y utilidad real
+- Métricas de éxito y escalabilidad
+- Recomendaciones estratégicas para evolución futura
+
+---
+
+## �📝 Licencia
 
 MIT License - Ver [LICENSE](LICENSE) para más detalles.
 
