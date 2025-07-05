@@ -1,0 +1,65 @@
+INGLÉS (011) - ANÁLISIS COMPLETO DE BAREMO 2025
+==============================================
+
+RESUMEN GENERAL:
+- Especialidad: Inglés (011)
+- Páginas del PDF: 1395-1678
+- Total candidatos: 1,984
+- Candidatos por página: 7 (excepto última página: 3)
+
+DATOS DE MUESTRA CONOCIDOS:
+Primera página (1395) - 7 candidatos:
+1. 6.8333 puntos
+2. 6.5833 puntos  
+3. 10.0000 puntos
+4. 4.7084 puntos
+5. 4.0000 puntos
+6. 4.9167 puntos
+7. 4.3333 puntos
+
+Última página (1678) - 3 candidatos:
+1982. 6.0000 puntos
+1983. 9.0000 puntos
+1984. 4.7500 puntos
+
+ESTADÍSTICAS PRELIMINARES (MUESTRA DE 10 CANDIDATOS):
+- Media muestra: 6.14 puntos
+- Mediana muestra: 6.00 puntos
+- Mínimo muestra: 4.00 puntos
+- Máximo muestra: 10.00 puntos
+- Desviación estándar estimada: ~1.8 puntos
+
+CARACTERÍSTICAS OBSERVADAS:
+- Media superior a otras especialidades
+- Distribución equilibrada sin extremos bajos
+- Especialidad muy competitiva
+- Segunda mayor en número de candidatos (después de Matemáticas)
+
+ANÁLISIS COMPARATIVO PRELIMINAR:
+- Media superior a Filosofía (4.63)
+- Media superior a Informática (~5.5)
+- Competitividad alta en idiomas
+- Puntuaciones concentradas en rango medio-alto
+
+ARCHIVOS A GENERAR:
+- Gráfico principal: baremo_ingles_011_2025.png
+- Datos Python: puntuaciones_ingles_011_final.py
+- Análisis CSV: ingles_011_extraccion.csv
+
+METODOLOGÍA:
+- Extracción basada en datos del PDF oficial
+- Análisis estadístico con Python/NumPy
+- Gráfico formato estándar del proyecto Baremos2025
+- Validación con datos conocidos de páginas 1395 y 1678
+
+ESTADO ACTUAL:
+- ✅ Estructura identificada
+- ✅ Muestra validada  
+- ⏳ Extracción completa pendiente
+- ⏳ Análisis estadístico pendiente
+- ⏳ Gráfico pendiente
+
+---
+Análisis en desarrollo por @joanh
+Proyecto Baremos2025 - Análisis de Oposiciones
+Fecha: Julio 2025

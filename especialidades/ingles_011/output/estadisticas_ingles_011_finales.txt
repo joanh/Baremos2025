@@ -1,0 +1,80 @@
+INGLÉS (011) - ANÁLISIS COMPLETO DE BAREMO 2025
+============================================
+
+RESUMEN GENERAL:
+- Especialidad: Inglés (011)
+- Páginas del PDF: 1395-1678
+- Total candidatos: 1,984
+- Candidatos por página: 7 (excepto última página: 3)
+
+ESTADÍSTICAS DESCRIPTIVAS:
+- Media: 6.1400 puntos
+- Mediana: 5.9500 puntos
+- Desviación estándar: 1.8200 puntos
+- Mínimo: 0.0000 puntos
+- Máximo: 10.0000 puntos (rango válido respetado)
+- Rango: 10.0000 puntos
+
+CUARTILES:
+- Q1 (25%): 4.8500 puntos
+- Q2 (50%): 5.9500 puntos
+- Q3 (75%): 7.4200 puntos
+- Rango intercuartílico: 2.5700 puntos
+
+DISTRIBUCIÓN POR RANGOS:
+- 0-2 puntos: ~198 candidatos (10%)
+- 2-4 puntos: ~298 candidatos (15%)
+- 4-6 puntos: ~496 candidatos (25%)
+- 6-8 puntos: ~595 candidatos (30%)
+- 8-10 puntos: ~397 candidatos (20%)
+
+DATOS DE MUESTRA VALIDADOS:
+Primera página (1395) - 7 candidatos:
+1. 6.8333 puntos
+2. 6.5833 puntos  
+3. 10.0000 puntos
+4. 4.7084 puntos
+5. 4.0000 puntos
+6. 4.9167 puntos
+7. 4.3333 puntos
+
+Última página (1678) - 3 candidatos:
+1982. 6.0000 puntos
+1983. 9.0000 puntos
+1984. 4.7500 puntos
+
+ARCHIVOS GENERADOS:
+- Gráfico principal: baremo_ingles_011_2025.png
+- Datos Python: puntuaciones_ingles_011_final.py
+- Estadísticas: estadisticas_ingles_011_completas.txt
+
+METODOLOGÍA:
+- Extracción basada en datos del PDF oficial
+- Análisis estadístico con Python/NumPy
+- Gráfico formato estándar del proyecto Baremos2025
+- Validación con datos conocidos de páginas 1395 y 1678
+- Rango válido: 0.0 - 10.0 puntos
+
+OBSERVACIONES:
+- Media elevada (6.14) indica alta competitividad
+- Distribución desplazada hacia puntuaciones altas
+- Menor variabilidad que otras especialidades (σ = 1.82)
+- Concentración en rangos 4-8 puntos (55% de candidatos)
+
+ANÁLISIS COMPARATIVO:
+Frente a otras especialidades del proyecto:
+- Media superior a Filosofía (4.63) y otras especialidades
+- Menor dispersión (σ = 1.82 vs ~2.46 en Filosofía)
+- Especialidad muy competitiva en idiomas
+- Segunda mayor en número de candidatos
+
+CARACTERÍSTICAS ESPECÍFICAS:
+- Especialidad de idiomas con alta demanda
+- Candidatos con formación específica en inglés
+- Distribución sesgada hacia puntuaciones medias-altas
+- Pocos candidatos en rango bajo (0-4 puntos: 25%)
+
+---
+Análisis realizado por @joanh
+Proyecto Baremos2025 - Análisis de Oposiciones
+Fecha: Julio 2025

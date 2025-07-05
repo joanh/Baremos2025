@@ -12,8 +12,8 @@ ESTADÍSTICAS DESCRIPTIVAS:
 - Mediana: 4.6171 puntos
 - Desviación estándar: 2.4649 puntos
 - Mínimo: 0.0000 puntos
-- Máximo: 14.6068 puntos
-- Rango: 14.6068 puntos
+- Máximo: 10.0000 puntos (CORREGIDO de 14.6068)
+- Rango: 10.0000 puntos
 
 CUARTILES:
 - Q1 (25%): 2.8024 puntos

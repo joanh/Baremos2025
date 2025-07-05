@@ -32,6 +32,15 @@ especialidades:
     pagina_fin: null     # Configurar según PDF
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Física y Química"
+  
+  INGLES:
+    codigo: "011"
+    nombre: "INGLES"
+    pagina_inicio: 1395
+    pagina_fin: 1678
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Inglés"
+    total_candidatos: 1984  # 283 páginas × 7 + 3 candidatos final
 
 # Configuración general
 configuracion:

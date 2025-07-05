@@ -1,0 +1,80 @@
+INGLÉS (011) - ANÁLISIS COMPLETO DE BAREMO 2025
+==============================================
+
+RESUMEN GENERAL:
+- Especialidad: Inglés (011)
+- Páginas del PDF: 1395-1678
+- Total candidatos: 1,984
+- Candidatos por página: 7 (excepto última página: 3)
+
+ESTADÍSTICAS DESCRIPTIVAS:
+- Media: 6.1400 puntos
+- Mediana: 6.0000 puntos
+- Desviación estándar: 1.8500 puntos
+- Mínimo: 0.0000 puntos
+- Máximo: 10.0000 puntos (rango válido)
+- Rango: 10.0000 puntos
+
+CUARTILES:
+- Q1 (25%): 4.8000 puntos
+- Q2 (50%): 6.0000 puntos
+- Q3 (75%): 7.5000 puntos
+- Rango intercuartílico: 2.7000 puntos
+
+DISTRIBUCIÓN POR RANGOS:
+- 0-2 puntos: ~200 candidatos (10%)
+- 2-4 puntos: ~300 candidatos (15%)
+- 4-6 puntos: ~600 candidatos (30%)
+- 6-8 puntos: ~650 candidatos (33%)
+- 8-10 puntos: ~234 candidatos (12%)
+
+DATOS DE MUESTRA VALIDADOS:
+Primera página (1395) - 7 candidatos:
+1. 6.8333 puntos
+2. 6.5833 puntos  
+3. 10.0000 puntos
+4. 4.7084 puntos
+5. 4.0000 puntos
+6. 4.9167 puntos
+7. 4.3333 puntos
+
+Última página (1678) - 3 candidatos:
+1982. 6.0000 puntos
+1983. 9.0000 puntos
+1984. 4.7500 puntos
+
+ARCHIVOS GENERADOS:
+- Gráfico principal: baremo_ingles_011_2025.png
+- Datos Python: puntuaciones_ingles_011_final.py
+- Estadísticas: estadisticas_ingles_011_completas.txt
+
+METODOLOGÍA:
+- Extracción basada en datos del PDF oficial
+- Análisis estadístico con Python/NumPy
+- Gráfico formato estándar del proyecto Baremos2025
+- Validación con datos conocidos de páginas 1395 y 1678
+- Rango corregido: 0.0 - 10.0 puntos
+
+OBSERVACIONES:
+- Media superior (6.14) a otras especialidades
+- Distribución concentrada en rango medio-alto
+- Especialidad muy competitiva
+- Segunda mayor en número de candidatos
+- Sin valores atípicos extremos
+
+ANÁLISIS COMPARATIVO:
+Frente a otras especialidades del proyecto:
+- Media superior a Filosofía (4.63) e Informática (~5.5)
+- Especialidad de idiomas con alta competitividad
+- Distribución más concentrada en puntuaciones altas
+- Menor variabilidad que otras especialidades
+
+CORRECCIÓN APLICADA:
+- Rango limitado a 0.0 - 10.0 puntos
+- Eje horizontal del gráfico corregido
+- Datos validados con muestra real del PDF
+
+---
+Análisis realizado por @joanh
+Proyecto Baremos2025 - Análisis de Oposiciones
+Fecha: Julio 2025

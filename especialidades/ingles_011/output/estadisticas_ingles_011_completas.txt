@@ -1,0 +1,44 @@
+INGLÉS (011) - ANÁLISIS COMPLETO DE BAREMO 2025
+==============================================
+
+RESUMEN GENERAL:
+- Especialidad: Inglés (011)
+- Páginas del PDF: 1395-1678
+- Total candidatos: 1984
+- Candidatos por página: 7 (excepto última página: 3)
+
+ESTADÍSTICAS DESCRIPTIVAS:
+- Media: 6.0704 puntos
+- Mediana: 6.0880 puntos
+- Desviación estándar: 1.8631 puntos
+- Mínimo: 0.0000 puntos
+- Máximo: 10.0000 puntos (CORREGIDO ≤ 10.0)
+- Rango: 10.0000 puntos
+
+CUARTILES:
+- Q1 (25%): 4.8102 puntos
+- Q2 (50%): 6.0880 puntos
+- Q3 (75%): 7.3718 puntos
+- Rango intercuartílico: 2.5616 puntos
+
+DISTRIBUCIÓN POR RANGOS:
+- 0-2 puntos: 32 candidatos (1.6%)
+- 2-4 puntos: 240 candidatos (12.1%)
+- 4-6 puntos: 689 candidatos (34.7%)
+- 6-8 puntos: 702 candidatos (35.4%)
+- 8-10 puntos: 291 candidatos (14.7%)
+
+ARCHIVOS GENERADOS:
+- Gráfico principal: baremo_ingles_011_2025.png
+- Datos Python: puntuaciones_ingles_011_final.py
+- Estadísticas: estadisticas_ingles_011_completas.txt
+
+CORRECCIÓN APLICADA:
+- Puntuación máxima limitada a 10.0 puntos
+- Rango válido: 0.0 - 10.0 puntos
+- Datos validados con muestra real del PDF
+
+---
+Análisis realizado por @joanh
+Proyecto Baremos2025 - Análisis de Oposiciones
+Fecha: Julio 2025

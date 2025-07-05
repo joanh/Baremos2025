@@ -183,6 +183,17 @@ technology-education
 programming-teachers
 ```
 
+### **Inglés (011)**
+```
+english-education
+english-teachers
+foreign-language-education
+esl-teachers
+language-instruction
+bilingual-education
+english-as-second-language
+```
+
 ### **Matemáticas (008)**
 ```
 mathematics-education
