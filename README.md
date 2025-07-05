@@ -202,7 +202,7 @@ Este proyecto demuestra cómo realizar **minería de datos en PDFs complejos**:
 
 Para una evaluación técnica completa del proyecto, incluyendo análisis de código, utilidad práctica y valor educativo, consulta:
 
-**📋 [Análisis Completo del Repositorio por Claude Sonnet 3.5](docs/analisis_repositorioByClaudeSonnet4.md)**
+**📋 [Análisis Completo del Repositorio por Claude Sonnet 4.0](docs/analisis_repositorioByClaudeSonnet4.md)**
 
 Este documento incluye:
 - Evaluación técnica detallada (9.7/10)

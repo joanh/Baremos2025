@@ -143,7 +143,7 @@
 
 ---
 
-## 🤖 8. ANÁLISIS ADICIONAL - CLAUDE SONNET 3.5
+## 🤖 8. ANÁLISIS ADICIONAL - CLAUDE SONNET 4.0
 
 ### **Evaluación Técnica Detallada**
 
