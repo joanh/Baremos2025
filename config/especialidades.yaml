@@ -26,12 +26,21 @@ especialidades:
     descripcion: "Profesores de Enseñanza Secundaria - Matemáticas"
   
   FISICA_QUIMICA:
-    codigo: "010" 
+    codigo: "007" 
     nombre: "FISICA_QUIMICA"
     pagina_inicio: null  # Configurar según PDF
     pagina_fin: null     # Configurar según PDF
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Física y Química"
+  
+  FRANCES:
+    codigo: "010"
+    nombre: "FRANCES"
+    pagina_inicio: 1356
+    pagina_fin: 1394
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Francés"
+    total_candidatos: 273  # 39 páginas × 7
   
   INGLES:
     codigo: "011"

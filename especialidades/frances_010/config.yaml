@@ -1,0 +1,57 @@
+# Configuración para Francés (010) - Baremo 2025
+
+especialidad:
+  codigo: "010"
+  nombre: "FRANCÉS"
+  descripcion: "Profesores de Enseñanza Secundaria - Francés"
+
+extraccion:
+  # Información del PDF
+  archivo_entrada: "baremo_frances_010_2025.pdf"
+  pagina_inicio: 1356
+  pagina_fin: 1394
+  candidatos_por_pagina: 7
+  total_esperado: 273  # 39 páginas × 7 candidatos/página
+
+  # Patrones de extracción
+  patron_dni: "^\\*\\*\\*\\*.*\\*"
+  patron_puntuacion: "\\b(\\d{1,2},\\d{4})\\b"
+  
+  # Caracteres problemáticos a limpiar
+  caracteres_limpiar: ["€", "„", "‚", "…"]
+
+# Nombres de archivos de salida
+output:
+  # Archivos de salida
+  csv: "puntuaciones_frances_010.csv"
+  txt: "puntuaciones_frances_010.txt" 
+  lista: "lista_frances_010.py"
+  estadisticas: "estadisticas_frances_010.txt"
+  grafico: "baremo_frances_010_2025.png"
+  
+  # Nombres de variables
+  variable_lista: "puntuaciones_frances"
+
+# Validación
+validacion:
+  # Datos conocidos para validación
+  pagina_inicial:
+    numero: 1356
+    puntuaciones_esperadas: [1.5833, 0.7500, 4.5833, 4.0000, 0.5000, 6.7500, 1.0000]
+  
+  pagina_final:
+    numero: 1394
+    puntuaciones_esperadas: [0.0000, 0.9000, 9.1250, 3.2500, 4.9167, 2.6000, 7.7000]
+  
+  # Rangos aceptables
+  rango_puntuaciones: [0.0, 10.0]
+  tolerancia_total: 10  # ±10 candidatos
+
+# Visualización
+grafico:
+  titulo: "Baremo Francés (010) - Oposiciones 2025"
+  subtitulo: "Distribución de puntuaciones - Comunidad de Madrid"
+  color_principal: "#8B5CF6"  # Púrpura para Francés
+  bins: 30
+  figsize: [12, 8]
+  dpi: 300

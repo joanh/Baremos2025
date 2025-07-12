@@ -203,7 +203,7 @@ numerical-analysis
 educational-mathematics
 ```
 
-### **Física y Química (010)**
+### **Física y Química (007)**
 ```
 physics-education
 chemistry-education

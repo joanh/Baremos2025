@@ -1,0 +1,61 @@
+# Configuración para Física y Química (007) - Baremo 2025
+# Comunidad de Madrid - Profesores de Enseñanza Secundaria
+
+especialidad:
+  codigo: "007"
+  nombre: "Fisica_Quimica"
+  nombre_completo: "Profesores de Enseñanza Secundaria - Física y Química"
+  
+# Configuración de extracción del PDF
+pdf:
+  archivo_entrada: "baremo_fisica_quimica_007_2025.pdf"
+  pagina_inicio: 925
+  pagina_fin: 1062
+  
+# Patrones de búsqueda específicos para Física y Química
+patrones:
+  # Patrón principal para identificar líneas de candidatos
+  linea_candidato: '^\d+\s+\d{8}[A-Z]\s+[A-ZÁÉÍÓÚÑÜ\s,]+\s+\d+[,\.]\d+'
+  
+  # Patrón para extraer puntuación total
+  puntuacion_total: '\d+[,\.]\d+(?=\s*$)'
+  
+  # Caracteres a limpiar
+  caracteres_limpiar: ['€', '‚', 'Ç', '§']
+
+output:
+  # Archivos de salida
+  csv: "puntuaciones_fisica_quimica_007.csv"
+  txt: "puntuaciones_fisica_quimica_007.txt" 
+  lista: "lista_fisica_quimica_007.py"
+  estadisticas: "estadisticas_fisica_quimica_007.txt"
+  grafico: "baremo_fisica_quimica_007_2025.png"
+  
+  # Nombres de variables
+  variable_lista: "puntuaciones_fisica_quimica"
+
+visualization:
+  titulo: "Baremo Física y Química 2025 - Comunidad de Madrid"
+  color_primario: "darkgreen"
+  color_secundario: "red"
+  tamaño_figura: [16, 6]
+  dpi: 300
+  firma: "@joanh"
+
+# Metadatos
+metadata:
+  año: 2025
+  convocatoria: "Provisional"
+  fuente: "Comunidad de Madrid"
+  fecha_publicacion: "2025-07-01"
+  autor_extraccion: "@joanh"
+  asistente: "Claude Sonnet 4.0"
+  
+# Puntuaciones de referencia para validación
+validacion:
+  pagina_inicio:
+    pagina: 925
+    puntuaciones_esperadas: [4.8333, 3.0667, 7.3500, 4.2500, 4.6667, 3.5417, 7.0000]
+  pagina_fin:
+    pagina: 1062
+    puntuaciones_esperadas: [4.0834, 8.4084, 3.0000, 8.0000, 5.5000, 5.4584]
