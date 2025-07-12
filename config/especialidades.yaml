@@ -20,18 +20,20 @@ especialidades:
   MATEMATICAS:
     codigo: "006"
     nombre: "MATEMATICAS"
-    pagina_inicio: null  # Configurar según PDF
-    pagina_fin: null     # Configurar según PDF
+    pagina_inicio: 662
+    pagina_fin: 924
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Matemáticas"
+    total_candidatos: 1829  # 262 páginas × 7 + 3 candidatos final
   
   FISICA_QUIMICA:
     codigo: "007" 
     nombre: "FISICA_QUIMICA"
-    pagina_inicio: null  # Configurar según PDF
-    pagina_fin: null     # Configurar según PDF
+    pagina_inicio: 925
+    pagina_fin: 1062
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Física y Química"
+    total_candidatos: 962  # 137 páginas × 7 + 3 candidatos final
   
   FRANCES:
     codigo: "010"
@@ -105,9 +107,18 @@ especialidades:
     descripcion: "Profesores de Enseñanza Secundaria - Educación Física"
     total_candidatos: 1945
 
+  LENGUA_LITERATURA:
+    codigo: "004"
+    nombre: "LENGUA_LITERATURA"
+    pagina_inicio: 113
+    pagina_fin: 359
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Lengua Castellana y Literatura"
+    total_candidatos: 1727  # 246 páginas × 7 + 5 candidatos final
+
 # Configuración general
 configuracion:
-  patron_dni: "^\*\*\*\*.*\*"
-  patron_numeros: "\b(\d{1,2},\d{4})\b"
+  patron_dni: '^\\*\\*\\*\\*.*\\*'
+  patron_numeros: '\\b(\\d{1,2},\\d{4})\\b'
   rango_puntuaciones: [0.0, 10.0]
   pdf_original: "rh03_257_2025_590_12_baremo_prov.pdf"
