@@ -56,7 +56,7 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 - **Media:** 5.06 puntos
 - **Desviación estándar:** 2.62
 - **Mediana:** 5.00 puntos
-- **Rango:** 0.00 - 13.00 puntos
+- **Rango:** 0.00 - 10.00 puntos
 
 ### Gráfico de Distribución
 ![Análisis Lengua y Literatura 2025](img/baremo_lengua_literatura_004_2025.png)
