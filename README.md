@@ -1,7 +1,3 @@
-# Baremos2025 📊
-
-Análisis completo de baremos de oposiciones de profesores de la Comunidad de Madrid para el año 2025.
-
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PDF Processing](https://img.shields.io/badge/PDF-Processing-red.svg)](https://github.com/jmcarpenter2/pdfplumber)
@@ -11,6 +7,12 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 [![Data Science](https://img.shields.io/badge/Data-Science-purple.svg)](https://pandas.pydata.org/)
 [![AI Assistant](https://img.shields.io/badge/AI%20Assistant-Claude%20Sonnet-ff6b35.svg)](https://claude.ai/)
 [![Education](https://img.shields.io/badge/Purpose-Education-brightgreen.svg)](https://github.com/joanh/Baremos2025)
+
+# Baremos2025 📊
+
+Análisis (casi) completo de baremos de oposiciones para **Profesores de Secundaria** de la Comunidad de Madrid para el año 2025.
+
+![](social_preview.png)
 
 ## 📑 Índice de Especialidades (ordenadas por código)
 
