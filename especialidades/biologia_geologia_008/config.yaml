@@ -1,0 +1,39 @@
+especialidad:
+  codigo: "008"
+  nombre: "BIOLOGIA_GEOLOGIA"
+  descripcion: "Profesores de Enseñanza Secundaria - Biología y Geología"
+
+extraccion:
+  pagina_inicio: 1063
+  pagina_final: 1245
+  total_paginas: 183
+  candidatos_estimados: 1281
+  candidatos_por_pagina: 7
+
+  # Validación con muestras proporcionadas (3 primeras + 3 últimas páginas)
+  validacion_inicial: [6.7083, 8.5000, 5.2917, 8.5000, 4.7084, 3.1000, 6.7500, 2.2500, 4.1250, 6.5500, 3.1000, 7.8333, 2.6000, 8.0000, 4.0000, 5.0000, 1.8500, 3.5000, 10.0000, 0.0000, 0.8500]
+  validacion_final: [1.9500, 5.4167, 8.0000, 7.9792, 1.7500, 7.2000, 0.0000, 1.8250, 6.0000, 7.0000, 3.5000, 4.0834, 10.0000, 6.4167, 7.0417]
+
+patrones:
+  dni: "****"
+  puntuacion_regex: "\\b(\\d{1,2},\\d{4})\\b"
+  rango_valido: [0.0, 10.0]
+  
+  # Caracteres problemáticos a limpiar
+  caracteres_limpiar: ["€", "„", "‚", "…"]
+
+rutas:
+  pdf_fuente: "../../../data/rh03_257_2025_590_12_baremo_prov.pdf"
+
+output:
+  csv: "puntuaciones_biologia_geologia_008.csv"
+  txt: "puntuaciones_biologia_geologia_008.txt"
+  python: "lista_biologia_geologia_008.py"
+  estadisticas: "estadisticas_biologia_geologia_008.txt"
+
+grafico:
+  titulo: "Baremo Biología y Geología 2025 - Comunidad de Madrid"
+  archivo: "baremo_biologia_geologia_008_2025.png"
+  dpi: 300
+  figsize: [16, 8]
+  colores: ["#87CEEB", "#FFA07A", "#CD5C5C", "#F0E68C", "#6495ED"]

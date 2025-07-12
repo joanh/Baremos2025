@@ -1,0 +1,14 @@
+=== ESTADÍSTICAS BIOLOGÍA Y GEOLOGÍA (008) - 2025 ===
+
+Total candidatos: 1275
+Media: 5.1734
+Mediana: 5.0208
+Desviación estándar: 2.7002
+Mínimo: 0.0000
+Máximo: 10.0000
+Rango: 10.0000
+
+CUARTILES:
+Q1 (25%): 3.0000
+Q2 (50%): 5.0208
+Q3 (75%): 7.5000

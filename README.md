@@ -20,13 +20,14 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 | **004** | [📖 Lengua y Literatura](#-lengua-y-literatura-004) | 1,727 | ✅ | [Estadísticas](especialidades/lengua_literatura_004/output/) \| [Gráfico](img/baremo_lengua_literatura_004_2025.png) |
 | **006** | [📐 Matemáticas](#-matemáticas-006) | 1,829 | ✅ | [Estadísticas](especialidades/matematicas_006/output/) \| [Gráfico](img/baremo_matematicas_006_2025.png) |
 | **007** | [⚗️ Física y Química](#-física-y-química-007) | 962 | ✅ | [Estadísticas](especialidades/fisica_quimica_007/output/) \| [Gráfico](img/baremo_fisica_quimica_007_2025.png) |
+| **008** | [🧬 Biología y Geología](#-biología-y-geología-008) | 1,275 | ✅ | [Estadísticas](especialidades/biologia_geologia_008/output/) \| [Gráfico](img/baremo_biologia_geologia_008_2025.png) |
 | **010** | [🗼 Francés](#-francés-010) | 273 | ✅ | [Estadísticas](especialidades/frances_010/output/) \| [Gráfico](img/baremo_frances_010_2025.png) |
 | **011** | [🌍 Inglés](#-inglés-011) | 1,984 | ✅ | [Estadísticas](especialidades/ingles_011/output/estadisticas_ingles_011_completas.txt) \| [Gráfico](img/baremo_ingles_011_2025.png) |
 | **018** | [🎯 Orientación Educativa](#-orientación-educativa-018) | 1,658 | ✅ | [Estadísticas](especialidades/orientacion_educativa_018/output/) \| [Gráfico](img/baremo_orientacion_educativa_018_2025.png) |
 | **019** | [🔧 Tecnología](#-tecnología-019) | 763 | ✅ | [Estadísticas](especialidades/tecnologia_019/output/) \| [Gráfico](img/baremo_tecnologia_019_2025.png) |
 | **107** | [💻 Informática](#-informática-107) | 343 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
 
-**📊 Total candidatos analizados: 10,100**
+**📊 Total candidatos analizados: 11,375**
 
 ---
 
@@ -91,6 +92,23 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 ![Análisis Física y Química 2025](img/baremo_fisica_quimica_007_2025.png)
 
 **📁 Datos completos:** [Carpeta Física y Química](especialidades/fisica_quimica_007/output/) | **📖 Documentación:** [README Física y Química](especialidades/fisica_quimica_007/)
+
+---
+
+## 🧬 Biología y Geología (008)
+
+### Estadísticas Principales
+
+- **Candidatos:** 1,275
+- **Media:** 5.17 puntos
+- **Desviación estándar:** 2.70
+- **Mediana:** 5.02 puntos
+- **Rango:** 0.00 - 10.00 puntos
+
+### Gráfico de Distribución
+![Análisis Biología y Geología 2025](img/baremo_biologia_geologia_008_2025.png)
+
+**📁 Datos completos:** [Carpeta Biología y Geología](especialidades/biologia_geologia_008/output/) | **📖 Documentación:** [README Biología y Geología](especialidades/biologia_geologia_008/)
 
 ---
 
@@ -194,6 +212,7 @@ Baremos2025/
 │   ├── lengua_literatura_004/ # Lengua y Literatura (004)
 │   ├── matematicas_006/       # Matemáticas (006)
 │   ├── fisica_quimica_007/    # Física y Química (007)
+│   ├── biologia_geologia_008/ # Biología y Geología (008)
 │   ├── frances_010/           # Francés (010)
 │   ├── ingles_011/           # Inglés (011)
 │   ├── orientacion_educativa_018/ # Orientación Educativa (018)
