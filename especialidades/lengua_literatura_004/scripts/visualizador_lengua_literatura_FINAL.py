@@ -93,17 +93,18 @@ def main():
     fig.suptitle('Baremo Lengua Castellana y Literatura 2025 - Comunidad de Madrid', 
                  fontsize=18, fontweight='bold', y=0.95)
     
-    # 1. HISTOGRAMA LIMPIO
+    # 1. HISTOGRAMA LIMPIO - RANGO LIMITADO A 0-10
     counts, bins, patches = ax1.hist(puntuaciones, bins=25, alpha=0.8, 
-                                    color='darkblue', edgecolor='white', linewidth=0.8)
+                                    color='darkblue', edgecolor='white', linewidth=0.8,
+                                    range=(0, 10))
     
-    # Curva normal superpuesta CORREGIDA
+    # Curva normal superpuesta CORREGIDA - LIMITADA AL RANGO 0-10
     mu, sigma = stats.norm.fit(puntuaciones)
-    x = np.linspace(puntuaciones.min(), puntuaciones.max(), 100)
+    x = np.linspace(0, 10, 100)  # FORZAR RANGO 0-10
     y_normal = stats.norm.pdf(x, mu, sigma)
     
     # Escalar correctamente la curva normal
-    bin_width = (puntuaciones.max() - puntuaciones.min()) / 25
+    bin_width = 10.0 / 25  # USAR RANGO FIJO 0-10
     scale_factor = len(puntuaciones) * bin_width
     y_scaled = y_normal * scale_factor
     
@@ -119,6 +120,9 @@ def main():
     ax1.set_ylabel('Número de Candidatos', fontsize=12, fontweight='bold')
     ax1.legend(loc='upper right', fontsize=10)
     ax1.grid(True, alpha=0.3)
+    
+    # FORZAR LÍMITES DEL EJE X A 0-10
+    ax1.set_xlim(0, 10)
     
     # TEXTO INFORMATIVO BIEN POSICIONADO
     textstr = f'Total: {len(puntuaciones)} candidatos'
