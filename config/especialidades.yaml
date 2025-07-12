@@ -15,7 +15,7 @@ especialidades:
     pagina_fin: 2697
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Informática"
-    total_candidatos: 343
+    total_candidatos: 338  # Valor real corregido
   
   MATEMATICAS:
     codigo: "006"
@@ -24,7 +24,7 @@ especialidades:
     pagina_fin: 924
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Matemáticas"
-    total_candidatos: 1829  # 262 páginas × 7 + 3 candidatos final
+    total_candidatos: 1808  # Valor real corregido
   
   FISICA_QUIMICA:
     codigo: "007" 
@@ -33,7 +33,7 @@ especialidades:
     pagina_fin: 1062
     candidatos_por_pagina: 7
     descripcion: "Profesores de Enseñanza Secundaria - Física y Química"
-    total_candidatos: 962  # 137 páginas × 7 + 3 candidatos final
+    total_candidatos: 947  # Valor real corregido
   
   FRANCES:
     codigo: "010"

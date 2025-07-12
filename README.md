@@ -17,19 +17,19 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 | Código | Especialidad | Candidatos | Estado | Acceso Rápido |
 |--------|--------------|------------|--------|---------------|
 | **001** | [🧠 Filosofía](#-filosofía-001) | 561 | ✅ | [Estadísticas](especialidades/filosofia_001/output/estadisticas_filosofia_001_completas.txt) \| [Gráfico](img/baremo_filosofia_001_2025.png) |
-| **004** | [📖 Lengua y Literatura](#-lengua-y-literatura-004) | 1,727 | ✅ | [Estadísticas](especialidades/lengua_literatura_004/output/) \| [Gráfico](img/baremo_lengua_literatura_004_2025.png) |
+| **004** | [📖 Lengua y Literatura](#-lengua-y-literatura-004) | 1,727 | ✅ | [Estadísticas](especialidades/lengua_literatura_004/output/) \| [Gráfico](img/baremo_lengua_y_literatura_004_2025.png) |
 | **005** | [🗺️ Geografía e Historia](#️-geografía-e-historia-005) | 2,112 | ✅ | [Estadísticas](especialidades/geografia_historia_005/output/) \| [Gráfico](img/baremo_geografia_e_historia_005_2025.png) |
-| **006** | [📐 Matemáticas](#-matemáticas-006) | 1,829 | ✅ | [Estadísticas](especialidades/matematicas_006/output/) \| [Gráfico](img/baremo_matematicas_006_2025.png) |
-| **007** | [⚗️ Física y Química](#️-física-y-química-007) | 962 | ✅ | [Estadísticas](especialidades/fisica_quimica_007/output/) \| [Gráfico](img/baremo_fisica_quimica_007_2025.png) |
+| **006** | [📐 Matemáticas](#-matemáticas-006) | 1,808 | ✅ | [Estadísticas](especialidades/matematicas_006/output/) \| [Gráfico](img/baremo_matematicas_006_2025.png) |
+| **007** | [⚗️ Física y Química](#️-física-y-química-007) | 947 | ✅ | [Estadísticas](especialidades/fisica_quimica_007/output/) \| [Gráfico](img/baremo_fisica_y_quimica_007_2025.png) |
 | **008** | [🧬 Biología y Geología](#-biología-y-geología-008) | 1,275 | ✅ | [Estadísticas](especialidades/biologia_geologia_008/output/) \| [Gráfico](img/baremo_biologia_geologia_008_2025.png) |
 | **010** | [🗼 Francés](#-francés-010) | 273 | ✅ | [Estadísticas](especialidades/frances_010/output/) \| [Gráfico](img/baremo_frances_010_2025.png) |
 | **011** | [🌍 Inglés](#-inglés-011) | 1,984 | ✅ | [Estadísticas](especialidades/ingles_011/output/estadisticas_ingles_011_completas.txt) \| [Gráfico](img/baremo_ingles_011_2025.png) |
 | **017** | [⚽ Educación Física](#-educación-física-017) | 1,945 | ✅ | [Estadísticas](especialidades/educacion_fisica_017/output/) \| [Gráfico](img/baremo_educacion_fisica_017_2025.png) |
 | **018** | [🎯 Orientación Educativa](#-orientación-educativa-018) | 1,658 | ✅ | [Estadísticas](especialidades/orientacion_educativa_018/output/) \| [Gráfico](img/baremo_orientacion_educativa_018_2025.png) |
 | **019** | [🔧 Tecnología](#-tecnología-019) | 763 | ✅ | [Estadísticas](especialidades/tecnologia_019/output/) \| [Gráfico](img/baremo_tecnologia_019_2025.png) |
-| **107** | [💻 Informática](#-informática-107) | 343 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
+| **107** | [💻 Informática](#-informática-107) | 338 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
 
-**📊 Total candidatos analizados: 15,432**
+**📊 Total candidatos analizados: 15,391**
 
 ---
 
@@ -85,11 +85,11 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 ## 📐 Matemáticas (006)
 
 ### Estadísticas Principales
-- **Candidatos:** 1,829
-- **Media:** 5.07 puntos
-- **Desviación estándar:** 2.61
-- **Mediana:** 5.00 puntos
-- **Rango:** 0.00 - 13.00 puntos
+- **Candidatos:** 1,808
+- **Media:** 4.68 puntos
+- **Desviación estándar:** 2.74
+- **Mediana:** 4.70 puntos
+- **Rango:** 0.00 - 10.00 puntos
 
 ### Gráfico de Distribución
 ![Análisis Matemáticas 2025](img/baremo_matematicas_006_2025.png)
@@ -101,14 +101,14 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 ## ⚗️ Física y Química (007)
 
 ### Estadísticas Principales
-- **Candidatos:** 962
-- **Media:** 5.09 puntos
-- **Desviación estándar:** 2.62
+- **Candidatos:** 947
+- **Media:** 4.97 puntos
+- **Desviación estándar:** 2.72
 - **Mediana:** 5.00 puntos
-- **Rango:** 0.00 - 13.00 puntos
+- **Rango:** 0.00 - 10.00 puntos
 
 ### Gráfico de Distribución
-![Análisis Física y Química 2025](img/baremo_fisica_quimica_007_2025.png)
+![Análisis Física y Química 2025](img/baremo_fisica_y_quimica_007_2025.png)
 
 **📁 Datos completos:** [Carpeta Física y Química](especialidades/fisica_quimica_007/output/) | **📖 Documentación:** [README Física y Química](especialidades/fisica_quimica_007/)
 
@@ -217,11 +217,11 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 ## 💻 Informática (107)
 
 ### Estadísticas Principales
-- **Candidatos:** 343
-- **Media:** 6.84 puntos
-- **Desviación estándar:** 2.44
-- **Mediana:** 7.00 puntos
-- **Rango:** 0.00 - 13.00 puntos
+- **Candidatos:** 338
+- **Media:** 4.31 puntos
+- **Desviación estándar:** 2.43
+- **Mediana:** 4.06 puntos
+- **Rango:** 0.00 - 10.00 puntos
 
 ### Gráfico de Distribución
 ![Análisis Informática 2025](img/baremo_informatica_107_2025.png)
