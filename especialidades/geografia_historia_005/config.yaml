@@ -1,0 +1,32 @@
+especialidad:
+  codigo: "005"
+  nombre: "Geografía e Historia"
+  emoji: "🗺️"
+  
+extraccion:
+  pagina_inicio: 360
+  pagina_fin: 661
+  archivo_pdf: "data/rh03_257_2025_590_12_baremo_prov.pdf"
+  
+validacion:
+  candidatos_primera_pagina: 7
+  candidatos_ultima_pagina: 6
+  
+  # Validación de las primeras 3 páginas (21 candidatos)
+  primeras_puntuaciones: [
+    4.0000, 3.7500, 2.0000, 6.0833, 2.2500, 8.0000, 3.0000,
+    4.0000, 4.6667, 7.6666, 6.1667, 2.1000, 4.5000, 1.1500,
+    1.0000, 0.7000, 8.5000, 4.5000, 3.0000, 0.0000, 1.3333
+  ]
+  
+  # Validación de las últimas 3 páginas (20 candidatos)
+  ultimas_puntuaciones: [
+    4.5000, 0.0000, 8.6667, 4.0000, 9.5000, 4.8333, 0.0000,
+    3.0000, 6.0000, 9.5000, 3.5000, 4.4167, 8.5000, 2.1500,
+    4.1917, 3.0000, 4.0000, 10.0000, 3.0000, 5.9167
+  ]
+
+estadisticas:
+  candidatos_estimados: 1800  # Estimación basada en el rango de páginas
+  puntuacion_maxima: 10.0
+  puntuacion_minima: 0.0

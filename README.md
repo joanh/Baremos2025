@@ -18,6 +18,7 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 |--------|--------------|------------|--------|---------------|
 | **001** | [🧠 Filosofía](#-filosofía-001) | 561 | ✅ | [Estadísticas](especialidades/filosofia_001/output/estadisticas_filosofia_001_completas.txt) \| [Gráfico](img/baremo_filosofia_001_2025.png) |
 | **004** | [📖 Lengua y Literatura](#-lengua-y-literatura-004) | 1,727 | ✅ | [Estadísticas](especialidades/lengua_literatura_004/output/) \| [Gráfico](img/baremo_lengua_literatura_004_2025.png) |
+| **005** | [🗺️ Geografía e Historia](#-geografía-e-historia-005) | 2,112 | ✅ | [Estadísticas](especialidades/geografia_historia_005/output/) \| [Gráfico](img/baremo_geografia_e_historia_005_2025.png) |
 | **006** | [📐 Matemáticas](#-matemáticas-006) | 1,829 | ✅ | [Estadísticas](especialidades/matematicas_006/output/) \| [Gráfico](img/baremo_matematicas_006_2025.png) |
 | **007** | [⚗️ Física y Química](#-física-y-química-007) | 962 | ✅ | [Estadísticas](especialidades/fisica_quimica_007/output/) \| [Gráfico](img/baremo_fisica_quimica_007_2025.png) |
 | **008** | [🧬 Biología y Geología](#-biología-y-geología-008) | 1,275 | ✅ | [Estadísticas](especialidades/biologia_geologia_008/output/) \| [Gráfico](img/baremo_biologia_geologia_008_2025.png) |
@@ -27,7 +28,7 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 | **019** | [🔧 Tecnología](#-tecnología-019) | 763 | ✅ | [Estadísticas](especialidades/tecnologia_019/output/) \| [Gráfico](img/baremo_tecnologia_019_2025.png) |
 | **107** | [💻 Informática](#-informática-107) | 343 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
 
-**📊 Total candidatos analizados: 11,375**
+**📊 Total candidatos analizados: 13,487**
 
 ---
 
@@ -60,6 +61,23 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 ![Análisis Lengua y Literatura 2025](img/baremo_lengua_literatura_004_2025.png)
 
 **📁 Datos completos:** [Carpeta Lengua y Literatura](especialidades/lengua_literatura_004/output/) | **📖 Documentación:** [README Lengua y Literatura](especialidades/lengua_literatura_004/)
+
+---
+
+## 🗺️ Geografía e Historia (005)
+
+### Estadísticas Principales
+
+- **Candidatos:** 2,112
+- **Media:** 4.53 puntos
+- **Desviación estándar:** 2.43
+- **Mediana:** 4.08 puntos
+- **Rango:** 0.00 - 10.00 puntos
+
+### Gráfico de Distribución
+![Análisis Geografía e Historia 2025](img/baremo_geografia_e_historia_005_2025.png)
+
+**📁 Datos completos:** [Carpeta Geografía e Historia](especialidades/geografia_historia_005/output/) | **📖 Documentación:** [README Geografía e Historia](especialidades/geografia_historia_005/)
 
 ---
 
@@ -210,6 +228,7 @@ Baremos2025/
 ├── especialidades/         # Análisis por especialidad
 │   ├── filosofia_001/         # Filosofía (001)
 │   ├── lengua_literatura_004/ # Lengua y Literatura (004)
+│   ├── geografia_historia_005/ # Geografía e Historia (005)
 │   ├── matematicas_006/       # Matemáticas (006)
 │   ├── fisica_quimica_007/    # Física y Química (007)
 │   ├── biologia_geologia_008/ # Biología y Geología (008)
