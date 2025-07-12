@@ -1,4 +1,4 @@
-# 🏃‍♂️ Educación Física (017) - Baremos 2025
+# ⚽ Educación Física (017) - Baremos 2025
 
 Análisis completo de las puntuaciones del baremo para la especialidad de **Educación Física (017)** en las oposiciones de profesores de la Comunidad de Madrid 2025.
 
