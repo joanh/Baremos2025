@@ -1,0 +1,64 @@
+especialidad:
+  nombre: "Educación Física"
+  codigo: "017"
+  emoji: "🏃‍♂️"
+  pagina_inicio: 1754
+  pagina_final: 2031
+  
+  # Validación con puntuaciones de las primeras páginas (1754-1756)
+  validacion_inicio:
+    - 6.3333
+    - 0.0000
+    - 3.1167
+    - 7.0000
+    - 3.2500
+    - 1.0000
+    - 5.5000
+    - 2.5000
+    - 1.5000
+    - 4.0000
+    - 6.0000
+    - 5.5000
+    - 7.7750
+    - 8.9583
+    - 3.5000
+    - 3.5667
+    - 3.5000
+    - 4.0000
+    - 7.7500
+    - 7.6667
+    - 9.7000
+    
+  # Validación con puntuaciones de las últimas páginas (2029-2031)
+  validacion_final:
+    - 3.0000
+    - 2.0000
+    - 4.5000
+    - 8.5000
+    - 4.0000
+    - 9.5000
+    - 4.0000
+    - 6.5000
+    - 4.5000
+    - 7.9500
+    - 9.6667
+    - 1.9000
+    - 7.9000
+    - 8.1500
+    - 0.2500
+    - 6.0000
+    - 1.0000
+    - 4.7500
+    - 2.0000
+    - 7.0000
+
+archivo:
+  pdf: "data/rh03_257_2025_590_12_baremo_prov.pdf"
+  
+extraccion:
+  metodo: "regex_especializado"
+  patron_busqueda: "educacion_fisica_pattern"
+  
+output:
+  directorio: "output"
+  formatos: ["csv", "txt", "png"]

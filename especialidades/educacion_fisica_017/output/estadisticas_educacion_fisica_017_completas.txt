@@ -1,0 +1,17 @@
+ESTADÍSTICAS COMPLETAS - EDUCACIÓN FÍSICA (017)
+==================================================
+
+Total candidatos: 1945
+Media: 5.0033
+Mediana: 4.7500
+Mínimo: 0.0000
+Máximo: 10.0000
+Desviación estándar: 2.5828
+
+DISTRIBUCIÓN POR RANGOS:
+0-2: 233 candidatos (12.0%)
+2-4: 523 candidatos (26.9%)
+4-6: 448 candidatos (23.0%)
+6-8: 417 candidatos (21.4%)
+8-10: 277 candidatos (14.2%)
+10-15: 47 candidatos (2.4%)

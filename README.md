@@ -24,11 +24,12 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 | **008** | [🧬 Biología y Geología](#-biología-y-geología-008) | 1,275 | ✅ | [Estadísticas](especialidades/biologia_geologia_008/output/) \| [Gráfico](img/baremo_biologia_geologia_008_2025.png) |
 | **010** | [🗼 Francés](#-francés-010) | 273 | ✅ | [Estadísticas](especialidades/frances_010/output/) \| [Gráfico](img/baremo_frances_010_2025.png) |
 | **011** | [🌍 Inglés](#-inglés-011) | 1,984 | ✅ | [Estadísticas](especialidades/ingles_011/output/estadisticas_ingles_011_completas.txt) \| [Gráfico](img/baremo_ingles_011_2025.png) |
+| **017** | [🏃‍♂️ Educación Física](#-educación-física-017) | 1,945 | ✅ | [Estadísticas](especialidades/educacion_fisica_017/output/) \| [Gráfico](img/baremo_educacion_fisica_017_2025.png) |
 | **018** | [🎯 Orientación Educativa](#-orientación-educativa-018) | 1,658 | ✅ | [Estadísticas](especialidades/orientacion_educativa_018/output/) \| [Gráfico](img/baremo_orientacion_educativa_018_2025.png) |
 | **019** | [🔧 Tecnología](#-tecnología-019) | 763 | ✅ | [Estadísticas](especialidades/tecnologia_019/output/) \| [Gráfico](img/baremo_tecnologia_019_2025.png) |
 | **107** | [💻 Informática](#-informática-107) | 343 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
 
-**📊 Total candidatos analizados: 13,487**
+**📊 Total candidatos analizados: 15,432**
 
 ---
 
@@ -162,6 +163,23 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 
 ---
 
+## 🏃‍♂️ Educación Física (017)
+
+### Estadísticas Principales
+
+- **Candidatos:** 1,945
+- **Media:** 5.00 puntos
+- **Desviación estándar:** 2.75
+- **Mediana:** 4.95 puntos
+- **Rango:** 0.00 - 10.00 puntos
+
+### Gráfico de Distribución
+![Análisis Educación Física 2025](img/baremo_educacion_fisica_017_2025.png)
+
+**📁 Datos completos:** [Carpeta Educación Física](especialidades/educacion_fisica_017/output/) | **📖 Documentación:** [README Educación Física](especialidades/educacion_fisica_017/)
+
+---
+
 ## 🎯 Orientación Educativa (018)
 
 ### Estadísticas Principales
@@ -234,6 +252,7 @@ Baremos2025/
 │   ├── biologia_geologia_008/ # Biología y Geología (008)
 │   ├── frances_010/           # Francés (010)
 │   ├── ingles_011/           # Inglés (011)
+│   ├── educacion_fisica_017/  # Educación Física (017)
 │   ├── orientacion_educativa_018/ # Orientación Educativa (018)
 │   ├── tecnologia_019/       # Tecnología (019)
 │   └── informatica_107/      # Informática (107)
