@@ -22,9 +22,10 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 | **007** | [⚗️ Física y Química](#-física-y-química-007) | 962 | ✅ | [Estadísticas](especialidades/fisica_quimica_007/output/) \| [Gráfico](img/baremo_fisica_quimica_007_2025.png) |
 | **010** | [🗼 Francés](#-francés-010) | 273 | ✅ | [Estadísticas](especialidades/frances_010/output/) \| [Gráfico](img/baremo_frances_010_2025.png) |
 | **011** | [🌍 Inglés](#-inglés-011) | 1,984 | ✅ | [Estadísticas](especialidades/ingles_011/output/estadisticas_ingles_011_completas.txt) \| [Gráfico](img/baremo_ingles_011_2025.png) |
+| **019** | [🔧 Tecnología](#-tecnología-019) | 763 | ✅ | [Estadísticas](especialidades/tecnologia_019/output/) \| [Gráfico](img/baremo_tecnologia_019_2025.png) |
 | **107** | [💻 Informática](#-informática-107) | 343 | ✅ | [Estadísticas](especialidades/informatica_107/output/) \| [Gráfico](img/baremo_informatica_107_2025.png) |
 
-**📊 Total candidatos analizados: 7,679**
+**📊 Total candidatos analizados: 8,442**
 
 ---
 
@@ -124,6 +125,23 @@ Análisis completo de baremos de oposiciones de profesores de la Comunidad de Ma
 
 ---
 
+## 🔧 Tecnología (019)
+
+### Estadísticas Principales
+
+- **Candidatos:** 763
+- **Media:** 4.58 puntos
+- **Desviación estándar:** 2.62
+- **Mediana:** 4.50 puntos
+- **Rango:** 0.00 - 10.00 puntos
+
+### Gráfico de Distribución
+![Análisis Tecnología 2025](img/baremo_tecnologia_019_2025.png)
+
+**📁 Datos completos:** [Carpeta Tecnología](especialidades/tecnologia_019/output/) | **📖 Documentación:** [README Tecnología](especialidades/tecnologia_019/)
+
+---
+
 ## 💻 Informática (107)
 
 ### Estadísticas Principales
@@ -160,6 +178,7 @@ Baremos2025/
 │   ├── fisica_quimica_007/    # Física y Química (007)
 │   ├── frances_010/           # Francés (010)
 │   ├── ingles_011/           # Inglés (011)
+│   ├── tecnologia_019/       # Tecnología (019)
 │   └── informatica_107/      # Informática (107)
 ├── src/                    # Código fuente
 ├── data/                   # PDFs originales

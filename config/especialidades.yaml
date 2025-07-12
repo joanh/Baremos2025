@@ -51,6 +51,18 @@ especialidades:
     descripcion: "Profesores de Enseñanza Secundaria - Inglés"
     total_candidatos: 1984  # 283 páginas × 7 + 3 candidatos final
 
+  TECNOLOGIA:
+    codigo: "019"
+    nombre: "TECNOLOGIA"
+    pagina_inicio: 2269
+    pagina_fin: 2377
+    candidatos_por_pagina: 7
+    descripcion: "Profesores de Enseñanza Secundaria - Tecnología"
+    total_candidatos: 763
+    icono: "🔧"
+    validacion_inicial: [2.5000, 5.1667, 1.2500, 8.0000, 3.5000, 1.5500, 3.8000, 0.5000, 6.4167, 6.0533, 9.7500, 0.8500, 4.5000, 5.0000, 0.5667, 9.0000, 0.0000, 0.0000, 8.0000, 5.7000, 3.9584]
+    validacion_final: [9.0000, 4.1667, 7.5000, 8.8333, 6.5000, 4.5500, 1.2625, 3.5000, 3.0833, 8.0000, 8.0000, 1.4167, 6.2500, 8.7000, 6.1250, 5.0000, 0.0000, 2.1000, 7.4167, 4.0833, 2.9500]
+
 # Configuración general
 configuracion:
   patron_dni: "^\*\*\*\*.*\*"

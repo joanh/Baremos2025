@@ -1,0 +1,14 @@
+=== ESTADÍSTICAS TECNOLOGÍA (019) - 2025 ===
+
+Total candidatos: 763
+Media: 4.5803
+Mediana: 4.5000
+Desviación estándar: 2.6217
+Mínimo: 0.0000
+Máximo: 10.0000
+Rango: 10.0000
+
+CUARTILES:
+Q1 (25%): 2.5000
+Q2 (50%): 4.5000
+Q3 (75%): 6.7500

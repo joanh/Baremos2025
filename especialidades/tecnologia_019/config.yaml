@@ -1,0 +1,39 @@
+especialidad:
+  codigo: "019"
+  nombre: "TECNOLOGIA"
+  descripcion: "Profesores de Enseñanza Secundaria - Tecnología"
+
+extraccion:
+  pagina_inicio: 2269
+  pagina_final: 2377
+  total_paginas: 109
+  candidatos_estimados: 763
+  candidatos_por_pagina: 7
+
+  # Validación con muestras proporcionadas
+  validacion_inicial: [2.5000, 5.1667, 1.2500, 8.0000, 3.5000, 1.5500, 3.8000, 0.5000, 6.4167, 6.0533, 9.7500, 0.8500, 4.5000, 5.0000, 0.5667, 9.0000, 0.0000, 0.0000, 8.0000, 5.7000, 3.9584]
+  validacion_final: [9.0000, 4.1667, 7.5000, 8.8333, 6.5000, 4.5500, 1.2625, 3.5000, 3.0833, 8.0000, 8.0000, 1.4167, 6.2500, 8.7000, 6.1250, 5.0000, 0.0000, 2.1000, 7.4167, 4.0833, 2.9500]
+
+patrones:
+  dni: "****"
+  puntuacion_regex: "\\b(\\d{1,2},\\d{4})\\b"
+  rango_valido: [0.0, 10.0]
+  
+  # Caracteres problemáticos a limpiar
+  caracteres_limpiar: ["€", "„", "‚", "…"]
+
+rutas:
+  pdf_fuente: "../../../data/rh03_257_2025_590_12_baremo_prov.pdf"
+
+output:
+  csv: "puntuaciones_tecnologia_019.csv"
+  txt: "puntuaciones_tecnologia_019.txt"
+  python: "lista_tecnologia_019.py"
+  estadisticas: "estadisticas_tecnologia_019.txt"
+
+grafico:
+  titulo: "Baremo Tecnología 2025 - Comunidad de Madrid"
+  archivo: "baremo_tecnologia_019_2025.png"
+  dpi: 300
+  figsize: [16, 8]
+  colores: ["#87CEEB", "#FFA07A", "#CD5C5C", "#F0E68C", "#6495ED"]
