@@ -8,9 +8,9 @@
 [![AI Assistant](https://img.shields.io/badge/AI%20Assistant-Claude%20Sonnet-ff6b35.svg)](https://claude.ai/)
 [![Education](https://img.shields.io/badge/Purpose-Education-brightgreen.svg)](https://github.com/joanh/Baremos2025)
 
-# Baremos2025 📊
+# Baremos Interinos 2025 📊
 
-Análisis (casi) completo de baremos de oposiciones para **Profesores de Secundaria** de la Comunidad de Madrid para el año 2025.
+> Análisis (casi) completo de los baremos de la fase de concurso, de las oposiciones para **Profesores de Secundaria** de la Comunidad de Madrid para el año 2025.
 
 ![](social_preview.png)
 
