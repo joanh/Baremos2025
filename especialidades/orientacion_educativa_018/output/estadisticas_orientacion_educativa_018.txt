@@ -1,0 +1,14 @@
+=== ESTADÍSTICAS ORIENTACIÓN EDUCATIVA (018) - 2025 ===
+
+Total candidatos: 1658
+Media: 4.9517
+Mediana: 4.5000
+Desviación estándar: 2.5147
+Mínimo: 0.0000
+Máximo: 10.0000
+Rango: 10.0000
+
+CUARTILES:
+Q1 (25%): 3.0000
+Q2 (50%): 4.5000
+Q3 (75%): 7.0000

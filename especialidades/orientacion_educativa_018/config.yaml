@@ -1,0 +1,39 @@
+especialidad:
+  codigo: "018"
+  nombre: "ORIENTACION_EDUCATIVA"
+  descripcion: "Profesores de Enseñanza Secundaria - Orientación Educativa"
+
+extraccion:
+  pagina_inicio: 2032
+  pagina_final: 2268
+  total_paginas: 237
+  candidatos_estimados: 1659
+  candidatos_por_pagina: 7
+
+  # Validación con muestras proporcionadas (3 primeras + 3 últimas páginas)
+  validacion_inicial: [0.0000, 1.7000, 5.0000, 3.0000, 3.2833, 6.8750, 8.5000, 6.8333, 7.9084, 7.0000, 0.0000, 5.8333, 4.5000, 3.0000, 5.0000, 6.0000, 3.0000, 9.4167, 1.1500, 3.0833, 4.7500]
+  validacion_final: [7.0000, 7.9584, 6.5000, 1.2500, 3.2500, 1.4500, 5.5000, 8.5000, 1.1500, 5.5000, 9.5000, 3.0000, 5.4583, 4.1667, 2.0000, 6.8333, 4.5000, 7.5000, 4.3333, 4.5000]
+
+patrones:
+  dni: "****"
+  puntuacion_regex: "\\b(\\d{1,2},\\d{4})\\b"
+  rango_valido: [0.0, 10.0]
+  
+  # Caracteres problemáticos a limpiar
+  caracteres_limpiar: ["€", "„", "‚", "…"]
+
+rutas:
+  pdf_fuente: "../../../data/rh03_257_2025_590_12_baremo_prov.pdf"
+
+output:
+  csv: "puntuaciones_orientacion_educativa_018.csv"
+  txt: "puntuaciones_orientacion_educativa_018.txt"
+  python: "lista_orientacion_educativa_018.py"
+  estadisticas: "estadisticas_orientacion_educativa_018.txt"
+
+grafico:
+  titulo: "Baremo Orientación Educativa 2025 - Comunidad de Madrid"
+  archivo: "baremo_orientacion_educativa_018_2025.png"
+  dpi: 300
+  figsize: [16, 8]
+  colores: ["#87CEEB", "#FFA07A", "#CD5C5C", "#F0E68C", "#6495ED"]
