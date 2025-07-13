@@ -29,7 +29,7 @@ output:
   txt: "puntuaciones_fisica_quimica_007.txt" 
   lista: "lista_fisica_quimica_007.py"
   estadisticas: "estadisticas_fisica_quimica_007.txt"
-  grafico: "baremo_fisica_quimica_007_2025.png"
+  grafico: "baremo_fisica_y_quimica_007_2025.png"
   
   # Nombres de variables
   variable_lista: "puntuaciones_fisica_quimica"

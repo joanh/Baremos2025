@@ -25,7 +25,7 @@ Extracción y análisis de datos para la especialidad de **Física y Química** 
 ✅ **Página 1062** (última): 6/6 puntuaciones validadas correctamente  
 ⚠️ **Página 925** (primera): 6/7 puntuaciones validadas (una puntuación en formato diferente)
 
-![Gráfico Física y Química](../../img/baremo_fisica_quimica_007_2025.png)
+![Gráfico Física y Química](../../img/baremo_fisica_y_quimica_007_2025.png)
 
 ## 🚀 Uso
 
