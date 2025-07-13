@@ -111,12 +111,12 @@ def main():
              label=f'Distribución Normal μ={mu:.2f}, σ={sigma:.2f}')
     
     # Línea de media VISIBLE
-    ax1.axvline(media, color='red', linestyle='--', linewidth=2, alpha=0.8,
-               label=f'Media: {media:.2f}')
+    ax1.axvline(media, color='red', linestyle='--', linewidth=3, alpha=1.0,
+               label=f'Media: {media:.4f}')
     
     # Línea de mediana VISIBLE
-    ax1.axvline(mediana, color='blue', linestyle='--', linewidth=2, alpha=0.8,
-               label=f'Mediana: {mediana:.2f}')
+    ax1.axvline(mediana, color='blue', linestyle='--', linewidth=3, alpha=1.0,
+               label=f'Mediana: {mediana:.4f}')
     
     # ETIQUETAS SIN SOLAPAMIENTOS
     ax1.set_title('Distribución de Puntuaciones', fontsize=14, fontweight='bold', pad=15)
