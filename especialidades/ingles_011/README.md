@@ -32,6 +32,8 @@
 - **Mediana:** 5.88 puntos
 - **Rango:** 4.00 - 10.00 puntos
 
+![Gráfico Inglés](../../img/baremo_ingles_011_2025.png)
+
 ## 🔧 Características Técnicas
 
 - **Extracción automatizada** desde PDFs oficiales

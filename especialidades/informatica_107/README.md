@@ -62,6 +62,8 @@ python validador_informatica.py
 - **Gráfico profesional** con estadísticas
 - **Validación** contra datos conocidos
 
+![Gráfico Informática](../../img/baremo_informatica_107_2025.png)
+
 ## 🔧 Configuración
 
 Todos los parámetros se configuran en `config.yaml`:

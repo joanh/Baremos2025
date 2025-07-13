@@ -43,7 +43,7 @@ python visualizador_lengua_literatura_CORREGIDO.py
 - **6-8 puntos**: 350 candidatos (20.3%)
 - **8-10 puntos**: 313 candidatos (18.1%)
 
-![Gráfico Lengua y Literatura](../../img/baremo_lengua_literatura_004_2025.png)
+![Gráfico Lengua y Literatura](../../img/baremo_lengua_y_literatura_004_2025.png)
 
 ## 📁 Estructura
 

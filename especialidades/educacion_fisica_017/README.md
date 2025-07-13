@@ -59,6 +59,8 @@ patron_educacion_fisica = r'\*\*\*\*\d+\*\s+[^0-9]+?\s+(\d+[,\.]\d+)'
 - `educacion_fisica_017.csv` - Datos estructurados con posiciones
 - `estadisticas_educacion_fisica_017_completas.txt` - Análisis estadístico completo
 
+![Gráfico Educación Física](../../img/baremo_educacion_fisica_017_2025.png)
+
 ### 📈 Visualizaciones
 - `baremo_educacion_fisica_017_2025.png` - Gráfico de distribución estándar
 
