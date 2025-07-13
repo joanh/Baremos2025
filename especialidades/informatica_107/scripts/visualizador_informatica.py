@@ -108,9 +108,11 @@ def main():
     ax1.grid(True, alpha=0.3)
     ax1.set_xlim(0, 10)
     
-    # Líneas de referencia
-    ax1.axvline(np.mean(puntuaciones), color='red', linestyle='--', alpha=0.8, linewidth=2)
-    ax1.axvline(np.median(puntuaciones), color='green', linestyle='--', alpha=0.8, linewidth=2)
+    # Líneas de referencia con etiquetas para la leyenda
+    ax1.axvline(np.mean(puntuaciones), color='red', linestyle='--', alpha=0.8, linewidth=2,
+               label=f'Media: {np.mean(puntuaciones):.2f}')
+    ax1.axvline(np.median(puntuaciones), color='green', linestyle='--', alpha=0.8, linewidth=2,
+               label=f'Mediana: {np.median(puntuaciones):.2f}')
     
     # Texto con estadísticas clave
     stats_text = 'Media: {:.2f}\n'.format(np.mean(puntuaciones))
