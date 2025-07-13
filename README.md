@@ -61,7 +61,7 @@
 - **Rango:** 0.00 - 10.00 puntos
 
 ### Gráfico de Distribución
-![Análisis Lengua y Literatura 2025](img/baremo_lengua_literatura_004_2025.png)
+![Análisis Lengua y Literatura 2025](img/baremo_lengua_y_literatura_004_2025.png)
 
 **📁 Datos completos:** [Carpeta Lengua y Literatura](especialidades/lengua_literatura_004/output/) | **📖 Documentación:** [README Lengua y Literatura](especialidades/lengua_literatura_004/)
 
@@ -161,7 +161,7 @@
 ### Gráfico de Distribución
 ![Análisis Inglés 2025](img/baremo_ingles_011_2025.png)
 
-**📁 Datos completos:** [Carpeta Inglés](especialidades/ingles_011/output/) | **📖 Documentación:** [README Inglés](especialidades/ingles_011/README_ingles.md)
+**📁 Datos completos:** [Carpeta Inglés](especialidades/ingles_011/output/) | **📖 Documentación:** [README Inglés](especialidades/ingles_011/README.md)
 
 ---
 

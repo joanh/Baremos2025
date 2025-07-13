@@ -1,0 +1,45 @@
+# Configuración para Inglés (011) - Baremo 2025
+especialidad:
+  codigo: "011"
+  nombre: "Inglés"
+  nivel: "Profesores de Enseñanza Secundaria"
+  
+# Configuración del PDF
+pdf:
+  archivo: "data/rh03_257_2025_590_12_baremo_prov.pdf"
+  pagina_inicio: 1200
+  pagina_fin: 1500
+  total_paginas: 301
+  
+# Validación de páginas clave
+validacion:
+  pagina_inicial:
+    numero: 1200
+    puntuaciones_esperadas: [5.0000, 3.5000, 8.5000, 2.5000, 6.4084]
+  pagina_final:
+    numero: 1500
+    puntuaciones_esperadas: [8.0000, 7.3333, 0.1000, 4.5000, 3.0000]
+
+# Patrones de extracción
+extraccion:
+  patron_puntuacion: r'\b\d+[.,]\d{4}\b'
+  columnas_buscar: ["Total"]
+  min_puntuacion: 0.0
+  max_puntuacion: 10.0
+
+# Configuración de salida
+output:
+  csv: "puntuaciones_ingles_011.csv"
+  txt: "puntuaciones_ingles_011.txt"
+  lista: "lista_ingles_011.py"
+  estadisticas: "estadisticas_ingles_011.txt"
+  grafico: "baremo_ingles_011_2025.png"
+
+# Metadatos
+metadata:
+  año: 2025
+  convocatoria: "Provisional"
+  fuente: "Comunidad de Madrid"
+  fecha_publicacion: "2025-07-01"
+  autor_extraccion: "@joanh"
+  asistente: "Claude Sonnet 4.0"
