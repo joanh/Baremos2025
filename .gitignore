@@ -37,9 +37,9 @@ output/*.tmp
 .DS_Store
 Thumbs.db
 
-# Backup temporal
+# Backup temporal y archivos confidenciales
+backup/
 backup/temp_*
 /confidencial
 README_new.md
 create_social_image.py
-backup
